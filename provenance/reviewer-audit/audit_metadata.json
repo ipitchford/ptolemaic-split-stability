@@ -1,0 +1,25 @@
+{
+  "review_date": "2026-09-27",
+  "source_archive_sha256": "e7d93e7adb9e2b8d76ac199b1c2fd3e151a39362e20baa3a3c0c26610af47244",
+  "original_archive_modified": false,
+  "python": "3.13.5",
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0"
+  },
+  "v02_summary_differences": {
+    "only_differences": "Three elapsed_seconds fields",
+    "shipped": [
+      3.6,
+      8.1,
+      18.5
+    ],
+    "reviewer_replay": [
+      10.0,
+      35.1,
+      53.8
+    ]
+  },
+  "script_note": "Included scripts are command-line-parameterised copies of scripts run during the review; checking logic unchanged. Parameterised copies syntax checked."
+}

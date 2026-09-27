@@ -1,0 +1,97 @@
+{
+  "formal_proof_assistant_used": false,
+  "jobs": [
+    {
+      "elapsed_seconds": 1.871,
+      "exit_code": 0,
+      "job": "exact",
+      "reports": {
+        "exact_results.json": {
+          "exact_byte_match_required": true,
+          "matches_shipped_bytes": true,
+          "sha256": "68ff09d251718fe479ffb9f8c0fb2eb15d858081122bb3af57ba2c7f1e33b0b1"
+        },
+        "local_stability_certificate.json": {
+          "exact_byte_match_required": true,
+          "matches_shipped_bytes": true,
+          "sha256": "c92895586b75efecfe93e49bbd2f02fc5f44c27d7c645f66b90b73398f7fe9c8"
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 3.992,
+      "exit_code": 0,
+      "job": "symbolic",
+      "reports": {
+        "symbolic_results.json": {
+          "exact_byte_match_required": true,
+          "matches_shipped_bytes": true,
+          "sha256": "5c3194579e7b07e21bc8fea0f8f6d6a4dede0611f1c12220d726aee436d5cb4b"
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 2.194,
+      "exit_code": 0,
+      "job": "numerical",
+      "reports": {
+        "numerical_results.json": {
+          "exact_byte_match_required": false,
+          "matches_shipped_bytes": true,
+          "sha256": "c8fbe885708d28d56ece0a2448b0cb57d8357c180c49b459a77b2d976a696182"
+        },
+        "numerical_trials.jsonl": {
+          "exact_byte_match_required": false,
+          "matches_shipped_bytes": true,
+          "sha256": "b2742be55ff2bea221db410ae251714f7249cf4b71b74166f7f77c9e2bad50cd"
+        }
+      },
+      "self_reported_status": "PASS"
+    },
+    {
+      "elapsed_seconds": 100.186,
+      "exit_code": 0,
+      "job": "search",
+      "reports": {
+        "equality_search_results.json": {
+          "exact_byte_match_required": false,
+          "matches_shipped_bytes": false,
+          "sha256": "4996e35d60a3db85722746986c62680d8406945741b757fe20bba060394041a5"
+        },
+        "equality_search_trials.jsonl": {
+          "exact_byte_match_required": false,
+          "matches_shipped_bytes": true,
+          "sha256": "f18432b6c01db0765698270229f0d67fa3b4ead0664bb1bae6b6d7ae72f87499"
+        }
+      },
+      "self_reported_status": "PASS"
+    },
+    {
+      "elapsed_seconds": 2.05,
+      "exit_code": 0,
+      "job": "lp_discovery",
+      "reports": {
+        "lp_discovery.json": {
+          "exact_byte_match_required": false,
+          "matches_shipped_bytes": true,
+          "sha256": "8518a33b7d44af4de20bcda8b86773091242083af1dc94232ec517d474169139"
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 13.041,
+      "exit_code": 0,
+      "job": "baseline_exact",
+      "nested_jobs": 5,
+      "nested_manifest_files": 130,
+      "nested_status": "PASS"
+    }
+  ],
+  "manifest_files_verified": 40,
+  "manifest_files_verified_after_replay": 40,
+  "mode": "full",
+  "scope": "Finite identities, exact certificate checks and optional bounded numerical corroboration; not universal proof validation.",
+  "status": "PASS",
+  "version": "0.2",
+  "with_baseline": true
+}

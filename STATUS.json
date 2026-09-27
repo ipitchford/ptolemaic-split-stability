@@ -1,0 +1,15 @@
+{
+  "version": "0.3.1-candidate",
+  "date": "2026-09-27",
+  "status": "research proof supplement; not peer reviewed",
+  "companion_needed_for_direct_local_theorems": false,
+  "companion_needed_for_global_equality_interpretation": true,
+  "five_point_classification": false,
+  "explicit_global_separated_constant": false,
+  "formal_proof_assistant": false,
+  "independent_specialist_review_new_results": false,
+  "historical_priority_verified": false,
+  "doi": "10.5281/zenodo.23000081",
+  "licence": "Original prose/data CC0-1.0; original code MIT; component exceptions in LICENSES.md",
+  "public_deployment": "Pending at immutable package freeze; consult provider record"
+}

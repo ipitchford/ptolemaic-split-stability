@@ -1,0 +1,14 @@
+name: Verify candidate
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: pip install -r requirements.txt
+      - run: python -B replay.py --mode full --output ../replay-normal
+      - run: python -O -B replay.py --mode full --output ../replay-optimized
+      - run: python -B code/test_verifier_modes.py --output ../mode-controls

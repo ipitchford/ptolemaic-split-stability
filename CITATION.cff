@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Cite the exact candidate version; retain its assurance limitations."
+type: software
+title: "Sharp local stability and critical-exponent sensitivity of Ptolemaic split metrics"
+authors:
+  - name: "Anonymous"
+version: "0.3.1-candidate"
+date-released: 2026-09-27
+doi: "10.5281/zenodo.23000081"
+url: "https://github.com/ipitchford/ptolemaic-split-stability"
+license: CC0-1.0

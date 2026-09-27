@@ -1,0 +1,723 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=23mm,headheight=15pt,headsep=7mm,footskip=10mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsthm}
+\usepackage{newtxtext,newtxmath}
+\usepackage{booktabs,longtable,array,calc}
+\usepackage{microtype,xurl,graphicx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\setlength{\emergencystretch}{2em}
+\linespread{1.02}
+\setcounter{secnumdepth}{0}
+\setcounter{tocdepth}{2}
+\newcommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\providecommand{\pandocbounded}[1]{#1}
+% Compatibility for uncaptioned Pandoc longtables with recent LaTeX.
+\newcounter{none}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize Ptolemaic rigidity and stability}
+\fancyhead[R]{\footnotesize Candidate v0.3.1}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\titleformat{\section}{\large\bfseries}{\thesection}{0pt}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\itshape}{\thesubsubsection}{0pt}{}
+\hypersetup{pdftitle={Sharp local stability and critical-exponent
+sensitivity of Ptolemaic split
+metrics},pdfauthor={Anonymous},pdfsubject={Research proof supplement; unrefereed}}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries Sharp local stability and critical-exponent sensitivity
+of Ptolemaic split metrics\par}
+\vspace{6pt}
+{\large All-cardinality first-order constants and the four-point
+transition\par}
+\vspace{8pt}
+{\small Anonymous\quad |\quad Candidate v0.3.1\quad |\quad 27 September 2026\par}
+\end{center}
+\vspace{4pt}
+\textbf{Assurance.} The new local theorems below are proved from
+explicit matrix calculations and a finite collection of
+rational-function certificates. They do not require the companion
+all-size theorem. Calling the listed split points the complete equality
+family for \(m\ge6\) uses the supplied v0.2 classification and its
+stated dependencies. The new four-point classification imports the
+four-point threshold, strict descent and Ercan's scalar estimate and
+coefficient transport. No proof-assistant verification, authenticated
+independent specialist review or exhaustive priority search is claimed.
+The complete v0.2 archive is preserved unchanged.
+
+\subsection{Abstract}\label{abstract}
+
+We determine the sharp first-order stability constants at every binding
+complete split metric of cardinality \(m\ge6\), and also at the
+five-point split. Under mean-cross-distance normalisation, the
+negative-type gap is comparable to the maximum distance perturbation
+with exact lower and upper one-sided asymptotic constants. Eighteen
+rational-function dual certificates prove the result in every larger
+dimension; thirty-six finite certificates cover the small exceptions.
+Their nonnegativity for the entire parameter range is certified by
+polynomial coefficient expansions, not inferred from tests of finitely
+many dimensions. We give explicit quadratic remainder bounds and prove
+that every direction in the linearised active-constraint cone is
+realised by a Ptolemaic curve. The resulting coefficient has three
+stable parity-dependent formulas after cardinality eight. We then
+calculate the first variation of the metric's own supremal negative-type
+exponent, obtaining sharp directional sensitivity constants. The three-
+and four-point equality families are also identified; at the four-point
+star, unequal-arm perturbations produce a quadratic gap, so the linear
+stability phenomenon does not extend to that cardinality. Finally, a
+quotient argument identifies the full kernel at collision limits and an
+explicit subcritical gap bound quantifies strictness for separated
+smaller-cardinality metrics. No numerical value for the global
+separated-class constant is asserted.
+
+\subsection{1. Scope, notation and imported
+results}\label{scope-notation-and-imported-results}
+
+A symmetric array \(d\) on distinct labelled points is a Ptolemaic
+metric if its distances are positive off the diagonal, satisfy the
+triangle inequalities, and satisfy
+\[d_{ij}d_{kl}\le d_{ik}d_{jl}+d_{il}d_{jk}.\] The metric
+\(s=\operatorname{CS}(a,r)\) has parts \(A,B\) of sizes \(a,r\): its
+distances are one within \(A\) and across the parts, and two within
+\(B\). Put \(m=a+r\) and \[T=\frac{r(a+1)}{a(r-1)},\qquad p=\log_2 T.\]
+The binding pairs considered here are \((a,r)=(k,k+1)\), \((k,k)\) and
+\((k,k+2)\), with \(m\ge6\), together with \((2,3)\). Thus \(a\ge2\),
+\(r\ge3\), and \(0<p<2\). For the first three families \(p\) is exactly
+the universal threshold \(p_m\) in the companion paper; in the
+five-point case this is Ercan's endpoint. The supplied v0.2 manuscript
+classifies all equality metrics for \(m\ge6\) as similarities of these
+splits. We do not re-prove that classification.
+
+Let \(\Pi=I-\mathbf1\mathbf1^{\mathsf T}/m\) and define
+\[\Delta_p(d)=\min_{z\perp\mathbf1,\ \|z\|_2=1}-z^{\mathsf T}d^p z.\]
+Powers are entrywise. This is a restricted eigenvalue; the automatic
+centring zero on the full space is not included. At the split, the
+restriction of \(-s^p\) has eigenvalues \(0\), \(1\) with multiplicity
+\(a-1\), and \(T\) with multiplicity \(r-1\). The unit null direction is
+proportional to \((r\mathbf1_A,-a\mathbf1_B)\), with squared normalising
+factor \(arm\).
+
+Normalise the mean of the \(ar\) cross-distances to one. Write
+\(e=d-s\), with coordinates \(y_{ij}\) within \(A\), \(x_{ib}\) across,
+and \(t_{bc}\) within \(B\), and set \(h=\|e\|_\infty\). The
+normalisation is \(\sum x_{ib}=0\). Throughout, a local statement is at
+a fixed labelled split; constants may depend on \((a,r)\).
+
+\textbf{Attribution.} The transport of a zero-sum coefficient vector
+through metric inversion is Ercan's Theorem 8.1, and the sign-changing
+choice of vertex is his Theorem 8.2 {[}E{]}. The equality-potential
+observation in v0.2 is used below, with these attributions retained. The
+threshold and Lorentzian correspondence originate in {[}B{]}; strict
+negative-type descent is {[}LW{]}. Matrix perturbation is standard
+{[}K{]}. The new work in this supplement concerns the complete
+tangent-cone calculation, the all-size sharp constants and the
+critical-exponent expansion. The short small-cardinality consequences
+are not presented as independently verified historical novelties.
+
+\subsection{2. Main local theorem}\label{main-local-theorem}
+
+Define the sum of all linearised active slacks by
+\[\ell(e)=-r(r-1)\sum_{i<j\in A}y_{ij}
+-\frac{a(a+1)}2\sum_{b<c\in B}t_{bc}.\] Set
+\[\gamma=\frac{2p}{ma(r-1)},\quad
+U_{a,r}=\frac{pr(3a-1)}{2m},\quad A_{a,r}=\gamma c_{a,r},\] where the
+rational constant \(c_{a,r}\) is
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+Pair or family & Range & \(c_{a,r}\) \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\((2,3)\) & five-point local result & \(6/5\) \\
+\((2,4)\) & six points & \(3/2\) \\
+\((3,3)\) & six points & \(9/5\) \\
+\((3,4)\) & seven points & \(3\) \\
+\((3,5)\) & eight points & \(60/11\) \\
+\((4,4)\) & eight points & \(5\) \\
+\((k,k)\) & \(k\ge5\) & \(k^2/2\) \\
+\((k,k+1)\) & \(k\ge4\) & \(k(k+1)/2\) \\
+\((k,k+2)\) & \(k\ge4\) & \(k(k+1)/2\) \\
+\end{longtable}
+}
+
+\textbf{Theorem 2.1 (sharp first-order stability in all these
+dimensions).} Put \[b_{a,r}=p(m-1)+18p^2(m-1)^2+\frac{3pr(a-1)}m,
+\qquad \rho_{a,r}=\min\left\{\frac18,\frac1{12p(m-1)}\right\}.\] Every
+Ptolemaic \(d\) in the preceding normalisation with \(h\le\rho_{a,r}\)
+satisfies \[\boxed{A_{a,r}h-b_{a,r}h^2\le\Delta_p(d)
+\le U_{a,r}h+p(m-1)h^2.}\] Both linear coefficients are sharp:
+\[\liminf_{\substack{d\to s,\ d\ne s\\d\ {\rm Ptolemaic}}}\frac{\Delta_p(d)}h=A_{a,r},
+\qquad
+\limsup_{\substack{d\to s,\ d\ne s\\d\ {\rm Ptolemaic}}}\frac{\Delta_p(d)}h=U_{a,r}.\]
+In particular \(\Delta_p(d)\ge A_{a,r}h/2\) if also
+\(h\le A_{a,r}/(2b_{a,r})\). The least eigendirection is simple on the
+displayed neighbourhood; with consistent sign its distance from the
+split null vector is at most \(6p(m-1)h\).
+
+The general quadratic constants are deliberately conservative. They do
+not replace the substantially better seven-point remainder and radius
+already proved in v0.2. The advance is exact first-order control in
+every cardinality and every equality type, rather than a numerical
+improvement of that seven-point radius.
+
+For \(m\ge9\), with mean cross-distance one and \(h=\|d-s\|_\infty\)
+still fixed, the lower coefficient simplifies to \[\boxed{
+A_{a,r}=\begin{cases}
+\displaystyle p_m\frac{m+1}{m(m-1)},&m\text{ odd},\\[1mm]
+\displaystyle\frac{p_m}{m-2},&m\text{ even},\ a=r,\\[1mm]
+\displaystyle\frac{p_m}{m},&m\text{ even},\ r=a+2.
+\end{cases}}\] Thus the two even equality types have different local
+condition constants. The metric normalisation and the norm used here are
+part of the statement; these constants are not invariant under changing
+that convention.
+
+\subsection{3. The exact tangent cone}\label{the-exact-tangent-cone}
+
+At \(s\), the only active triangle and Ptolemy inequalities are
+\[u_{i;bc}=x_{ib}+x_{ic}-t_{bc}\ge0,\]
+\[v_{ij;bc}=x_{ib}+x_{ic}+x_{jb}+x_{jc}-2y_{ij}-t_{bc}\ge0,\] for
+\(i,j\in A\), \(b,c\in B\), with unordered distinct pairs. There are
+\(a\binom r2\) triangle rows and \(\binom a2\binom r2\) Ptolemy rows.
+Denote their integer matrix by \(D\). If \(w\) is the cross-edge
+indicator, direct counting gives
+\[D^{\mathsf T}\mathbf1=a(r-1)w-r(r-1)\mathbf1_{AA}
+-\frac{a(a+1)}2\mathbf1_{BB}.\] Hence \(\ell(e)=\mathbf1^{\mathsf T}De\)
+when \(w^{\mathsf T}e=0\).
+
+The exact metric inequalities give \(u\ge0\) and \[v_{ij;bc}\ge-3h^2,\]
+because the omitted quadratic term is
+\[x_{ib}x_{jc}+x_{ic}x_{jb}-y_{ij}t_{bc}.\] All inactive inequalities
+have strictly positive slack at \(s\).
+
+\textbf{Lemma 3.1 (every cone direction is geometrically attainable).}
+Let \(De\ge0\), \(w^{\mathsf T}e=0\), and \(\|e\|_\infty\le1\). Let
+\(e^{\rm in}\) equal \(-1\) on within-part edges and zero on
+cross-edges. Then \[d_t=s+te+4t^2e^{\rm in},\qquad 0<t\le1/20,\] is a
+positive Ptolemaic metric with mean cross-distance one.
+
+\emph{Proof.} On triangle rows \(De^{\rm in}=1\) and on Ptolemy rows
+\(De^{\rm in}=3\). Consequently the active triangle slack is at least
+\(4t^2\), and the linear part of each active Ptolemy slack is at least
+\(12t^2\). The absolute quadratic contribution is at most
+\(3(t+4t^2)^2\le(108/25)t^2<12t^2\). Every entry changes by at most
+\(t+4t^2\le3/50\). An inactive triangle slack changes by at most
+\(9/50<1\). An inactive Ptolemy slack, a signed sum of three products,
+changes by at most \(3(4\cdot3/50+(3/50)^2)<1\). The original inactive
+slacks are at least one, so all remain positive. Positivity of distances
+and the normalisation are immediate. Conversely, the derivative of any
+differentiable feasible curve satisfies the linear inequalities. Thus
+this is the exact tangent cone, not merely a relaxation. \(\square\)
+
+\subsection{4. The sharp linear programme and its universal
+certificate}\label{the-sharp-linear-programme-and-its-universal-certificate}
+
+\textbf{Theorem 4.1 (exact cone norm).} For every binding pair in
+Section 2, \[De\ge0,\quad w^{\mathsf T}e=0
+\quad\Longrightarrow\quad
+c_{a,r}\|e\|_\infty\le\ell(e)
+\le\frac{ar(r-1)(3a-1)}4\|e\|_\infty.\] Both constants are attained by
+cone directions.
+
+The upper bound follows from the explicit coefficients of \(\ell\), and
+\(e^{\rm in}\) attains it. The lower bound has a finite rational
+certificate for every edge \(f\) and sign \(\sigma\in\{-1,1\}\):
+\[\boxed{D^{\mathsf T}\eta+\mu w
+=D^{\mathsf T}\mathbf1-c_{a,r}\sigma\epsilon_f,
+\qquad\eta\ge0.} \tag{C}\] The supplied certificates additionally
+satisfy \(\eta_j\le2\) on every Ptolemy row. Consequently the same
+identity for a nonlinear feasible metric gives
+\[\boxed{\ell(e)\ge c_{a,r}h
+-6\binom a2\binom r2h^2.} \tag{4.1}\] Indeed choose \(\sigma e_f=h\).
+Triangle slacks are nonnegative, Ptolemy slacks are at least \(-3h^2\),
+and the sum of their certificate weights is at most
+\(2\binom a2\binom r2\).
+
+\subsubsection{4.1 Exact description of the certificate
+families}\label{exact-description-of-the-certificate-families}
+
+The certificate is invariant under the stabiliser of the selected edge.
+For an anchor edge distinguish its two anchors; for a cross edge
+distinguish its anchor and pole; for a pole edge distinguish its two
+poles. A triangle row is classified by the number of distinguished
+anchors and poles it contains. A Ptolemy row is classified in the same
+way. Denote these row orbits by \((u,i,j)\) and \((v,i,j)\).
+
+The data in \texttt{certificates/symbolic\_duals.json} give eighteen
+explicit rational-function vectors \(\eta(k)\) and scalars \(\mu(k)\):
+three families \((a,r)=(k,k+d)\), \(d=0,1,2\), three edge types and two
+signs. The domains are \(k\ge5\) for \(d=0\) and \(k\ge4\) for
+\(d=1,2\). \texttt{CERTIFICATE\_TABLES.md} prints all these expressions.
+No linear-programming solver is required to verify them.
+
+\textbf{Indispensable proof supplement.} The complete tables, both JSON
+certificate collections, corrected verifiers, pinned dependencies and
+checksum manifest accompany this version in the archived research
+package {[}SUPP{]}. They are part of the proof of Theorem 4.1, not
+optional numerical illustrations. The eighteen symbolic certificates
+establish universal parameter ranges; sampled dimensions alone do not.
+
+For clarity, one extremal certificate, the negative pole-edge
+certificate in the balanced family \((k,k)\), is
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+Row orbit & Weight \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\((u,0,0)\) & \(k/(k-3)\) \\
+\((u,0,1)\) & \(0\) \\
+\((u,0,2)\) & \(0\) \\
+\((v,0,0)\) & \((k^2-4k-3)/[(k-3)(k-1)]\) \\
+\((v,0,1)\) & \((k+1)/(k-1)\) \\
+\((v,0,2)\) & \(1/(k-1)\) \\
+\end{longtable}
+}
+
+Here \(\mu=1\) and \(c=k^2/2\). At \(k=5+x\), every weight is
+nonnegative for \(x\ge0\); for example \(k^2-4k-3=x^2+6x+2\). All
+Ptolemy weights are at most two.
+
+For each of the eighteen vectors, the symbolic verifier constructs the
+orbit matrix directly by counting. If \(s_A,s_B\) distinguished vertices
+occur in the two parts, an orbit has multiplicity
+\[\binom{s_A}{i}\binom{a-s_A}{n_A-i}
+\binom{s_B}{j}\binom{r-s_B}{2-j},\] where \(n_A=1\) for a triangle row
+and \(2\) for a Ptolemy row. The coefficient of an edge orbit in
+\(D^{\mathsf T}\eta\) is its total coefficient in a representative row,
+times this multiplicity, divided by the size of the edge orbit. Symmetry
+proves this counting formula. Substitution verifies (C) as a
+rational-function identity. Nonnegativity of \(\eta\) and of \(2-\eta\)
+for Ptolemy rows is checked by substituting \(k=k_0+x\): each numerator
+and denominator has nonnegative rational coefficients and the
+denominator has positive constant term. These are certificates on the
+entire half-line \(x\ge0\), not interpolation from sampled dimensions.
+
+The six small pairs have thirty-six rational certificate vectors in
+\texttt{small\_duals.json}, again covering the three edge types and both
+signs, all satisfying the same Ptolemy weight bound. A separate
+standard-library implementation enumerates the original labelled rows
+and verifies the identities without using symbolic orbit counting. It
+also evaluates the universal certificates at selected dimensions as a
+separate implementation check. The symbolic positivity certificates, not
+those finite evaluations, justify arbitrary cardinality.
+
+\subsubsection{4.2 Primal sharpness
+certificates}\label{primal-sharpness-certificates}
+
+Distinguish two poles. Give every anchor the same cross perturbation
+\(u\) towards these two poles and \(v=-2u/(r-2)\) towards the others.
+Give all anchor edges the same perturbation \(Y\), the distinguished
+pole edge perturbation \(-1\), each pole edge with exactly one
+distinguished endpoint perturbation \(t_1\), and every other pole edge
+perturbation \(t_2\).
+
+For the six small pairs use
+\[u=-\frac{r-2}{3r-4},\quad v=\frac2{3r-4},\quad
+Y=-\frac{r-4}{2(3r-4)},\quad t_1=-\frac{r-4}{3r-4},\quad t_2=\frac4{3r-4}.\]
+These entries have maximum absolute value one, obey \(De\ge0\) and the
+normalisation, and give
+\[\ell(e)=\frac{ar\{(a-1)(r-2)(r-3)+4\}}{4(3r-4)}=c_{a,r}.\] There is no
+\(t_2\) edge when \(r=3\); the unused value causes no issue.
+
+For the balanced family \(a=r=k\ge5\) use
+\[u=-\frac{r-2}{4(r-1)},\quad v=Y=\frac1{2(r-1)},\quad
+ t_1=-\frac{r-2}{2(r-1)},\quad t_2=\frac1{r-1}.\] The six row-orbit
+slacks, in increasing numbers of distinguished poles, are
+\(0,r/[4(r-1)],r/[2(r-1)]\) for triangles and \(0,0,0\) for Ptolemy
+rows. Every entry has absolute value at most one, and direct
+substitution gives \(\ell=ar/2=c_{a,r}\). In the remaining two infinite
+families, simply shorten one pole edge by one and leave every other
+perturbation zero; this gives \(\ell=a(a+1)/2=c_{a,r}\). Thus the lower
+bound is attained. Lemma 3.1 integrates these directions into true
+metrics, proving that the linear-programming constants are the geometric
+first-order constants. \(\square\)
+
+\subsection{5. From the cone to the spectral
+gap}\label{from-the-cone-to-the-spectral-gap}
+
+The exceptional constants reflect a change of the optimal face, not a
+different choice of normalisation. In the six small pairs, shortening
+the distinguished pole edge is accompanied by compensating cross-edge
+and anchor-edge changes. Their cost is smaller than that of shortening
+that edge alone. For example, at \((3,5)\) this gives \(60/11<6\). In
+the stable unbalanced families the single-edge direction is already
+optimal. In the balanced family the optimum continues to distribute the
+perturbation, with all Ptolemy rows tight in the displayed stable
+direction. Its dual certificate requires \(k\ge5\): the numerator
+\(k^2-4k-3\) is negative at \(k=4\). These explicit primal and dual
+facts explain why the small regimes require separate certificates; they
+are not a claim of uniqueness of the extremising direction.
+
+The null eigenvalue at \(s\) is simple on \(\mathbf1^\perp\), and the
+other eigenvalues are at least one. Put \(H=-\Pi d^p\Pi\) on that space,
+and expand \(H=H_0+H_1+H_2\). Because \(0<p<2\), \(h\le1/8\), and the
+reference distances are one or two, entrywise Taylor expansion gives
+\[\|H_1\|\le2p(m-1)h,\qquad
+\|H_2\|\le p(m-1)h^2,\qquad
+\|H-H_0\|\le3p(m-1)h=:\varepsilon.\] The second derivative bound used
+here is \(|p(p-1)x^{p-2}|/2\le p\) on \(x\ge7/8\) when \(0<p<2\) and
+\(x\) lies within \(1/8\) of one or two. This loose bound also covers
+\(p=1\).
+
+Direct expansion against the unit null vector gives
+\[z_*^{\mathsf T}H_1z_*
+=-\frac{2p}{m}\left[\frac ra\sum y_{ij}
++\frac{aT}{2r}\sum t_{bc}\right]=\gamma\ell(e).\] The cross term
+vanishes because the sum of cross perturbations is zero. This does not
+mean that individual cross edges are irrelevant: the active constraints
+couple them to within-part changes.
+
+If \(\varepsilon\le1/4\), the other eigenvalues remain at least \(3/4\),
+and the least eigenvalue remains in \([-1/4,1/4]\). Write the matrix in
+the decomposition \(\mathbb Rz_*\oplus z_*^\perp\). The scalar Schur
+equation gives \[0\le z_*^{\mathsf T}Hz_*-\lambda_{\min}(H)
+\le\frac{\varepsilon^2}{1-2\varepsilon}\le2\varepsilon^2.\] For the
+corresponding signed unit eigenvector, the block equation bounds the
+tangent of its angle from \(z_*\) by \(\varepsilon/(1-2\varepsilon)\).
+The distance between the unit vectors is no larger than that tangent,
+hence at most \(2\varepsilon\). This is the elementary simple-eigenvalue
+estimate underlying standard perturbation theory {[}K{]}. Therefore
+\[\gamma\ell(e)-[p(m-1)+18p^2(m-1)^2]h^2
+\le\Delta_p(d)\le\gamma\ell(e)+p(m-1)h^2.\] Insert (4.1) and the upper
+cone bound. Since \[6\gamma\binom a2\binom r2=\frac{3pr(a-1)}m,\]
+Theorem 2.1 follows. The extremal curves of Section 4 have
+\(h(t)=t+O(t^2)\) and \(\ell(e(t))=c_{a,r}t+O(t^2)\) or its upper
+analogue, proving sharpness.
+
+This proof is local and self-contained at the specified split metrics.
+It gives local negative type without assuming the global companion
+theorem. The companion and v0.2 remain premises only when one concludes
+that every possible global equality metric has one of these local
+models.
+
+\subsection{6. Sensitivity of the metric's own critical
+exponent}\label{sensitivity-of-the-metrics-own-critical-exponent}
+
+Let \[\wp(d)=\sup\{q>0:d\text{ has }q\text{-negative type}\}.\] This is
+the exponent of the particular metric, not the universal minimum over
+all metrics of its cardinality.
+
+\textbf{Relation to earlier exponent and gap results.} Sánchez {[}S,
+Theorem 2.3 and Corollary 2.4{]} characterises the finite-metric
+endpoint using the distance matrix and its inverse on the constant
+vector. Thus detecting the critical exponent through loss of matrix
+strictness is established machinery. His complete-bipartite path metrics
+are not the complete split metrics here. Li--Weston {[}LW, Theorem
+3.3{]} give quantitative extensions of the admissible exponent from a
+positive negative-type gap, as well as strict descent and endpoint
+non-strictness. The contribution here is the exact Ptolemaic tangent
+cone, its attained extremal directional constants, and their
+all-cardinality formulas, not a new general matrix characterisation.
+
+Gap normalisations must also be distinguished. Our \(\Delta_p\)
+minimises \(-z^{\mathsf T}d^p z\) over zero-sum vectors with
+\(\|z\|_2=1\). The normalised-simplex gap in {[}LW{]} uses positive and
+negative weights separately summing to one (equivalently \(\|z\|_1=2\)),
+with its associated quadratic-form factor. A rooted Gramian has yet
+another coordinate convention; Robertson {[}R, Sections 1--2{]}
+discusses its spectral relation to negative-type gaps for ultrametric
+spaces. These quantities express related strictness properties but their
+numerical constants cannot be substituted without a normalisation
+conversion.
+
+\textbf{Theorem 6.1 (critical-exponent expansion).} At every split
+covered by Theorem 2.1, for Ptolemaic \(d\to s\) in mean-cross-distance
+normalisation,
+\[\boxed{\wp(d)-p=\frac{m}{r(a+1)\log2}\,\Delta_p(d)+O(h^2)
+=\frac{2p\ell(e)}{ar(r-1)(a+1)\log2}+O(h^2).}\] The constants hidden in
+\(O(h^2)\) depend on the fixed split. Consequently the sharp lower and
+upper limits of \((\wp(d)-p)/h\) are
+\[\boxed{\frac{2p c_{a,r}}{ar(r-1)(a+1)\log2},
+\qquad\frac{p(3a-1)}{2(a+1)\log2}.}\]
+
+\emph{Proof.} In positive distance coordinates, \(-\Pi d^q\Pi\) is real
+analytic jointly in \(d,q\). Its simple eigenvalue through zero at
+\((s,p)\) has exponent derivative \[\partial_q\lambda(s,p)
+=-\frac{a(r-1)T}{m}\log2
+=-\frac{r(a+1)}m\log2=:-\Lambda<0.\] The implicit-function theorem
+produces a unique nearby zero \(q_c(d)\), with other restricted
+eigenvalues positive. The least eigenvalue changes from positive to
+negative as \(q\) increases through this root. Strict descent of
+negative type {[}LW{]} prevents another, larger negative-type interval:
+negative type at any larger exponent would imply strict negative type at
+an exponent immediately above the displayed root, a contradiction. Hence
+\(\wp(d)=q_c(d)\). Expansion at \(q=p\) gives
+\[0=\Delta_p(d)-\Lambda(q_c-p)+O(h|q_c-p|+(q_c-p)^2),\] and
+\(q_c-p=O(h)\) gives the first formula. Theorem 2.1 and its sharp curves
+give both limits. \(\square\)
+
+For seven points these limits are
+\[\frac{p_7}{24\log2}\quad\text{and}\quad\frac{p_7}{\log2}.\] This
+identifies how much extra snowflaking power a near-extremal metric
+actually permits. It is not an algorithmic complexity statement. The
+expansion concerns a fixed cardinality and normalisation; no uniform
+remainder over all \(m\) is claimed.
+
+For large \(m\), \(p_m\sim4/(m\log2)\). The sharp lower gap coefficient
+is asymptotic to \(4/(m^2\log2)\), while the upper coefficient tends to
+\(3/(2\log2)\). Their ratio grows as \(3m^2/8\). The sharp lower
+critical-exponent coefficient is asymptotic to \(16/[m^3(\log2)^2]\),
+whereas its upper coefficient is asymptotic to \(6/[m(\log2)^2]\). These
+follow by substitution, not by extrapolating numerical data.
+
+\subsection{7. Small-cardinality equality and the change of stability
+order}\label{small-cardinality-equality-and-the-change-of-stability-order}
+
+\textbf{Proposition 7.1 (three and four points).} At \(P(3)=2\), the
+equality metrics are precisely the three distinct collinear points,
+equivalently the positive triples whose longest distance is the sum of
+the other two. At \(P(4)=\log_2 3\), the equality metrics are precisely
+the similarities of \(\operatorname{CS}(1,3)\) and
+\(\operatorname{CS}(2,2)\).
+
+\emph{Proof.} The three-point assertion is the Gram determinant
+criterion for a Euclidean triangle. For four points put \(p=\log_2 3\).
+The negative-type endpoint is {[}B, Theorem 7.16{]}; every three-point
+metric has strict negative type at this \(p<2\) by {[}LW{]}. Thus an
+equality vector has full support.
+
+If its sign pattern is \(1+3\), normalise the positive coefficient to
+one and write the negative magnitudes as \(c_i>0\), \(\sum c_i=1\). Let
+the three root lengths be \(\ell_i\). Ercan's scalar inequality {[}E,
+Lemma 2.1{]} with \(2^p-2=1\) gives
+\[(\ell_i+\ell_j)^p\le\ell_i^p+\ell_j^p+(\ell_i\ell_j)^{p/2},\] with
+equality only when \(\ell_i=\ell_j\). The gap is a sum of the
+triangle-power slacks, these scalar slacks and
+\[\frac12\sum_{i<j}(c_i\ell_i^{p/2}-c_j\ell_j^{p/2})^2.\] All weights
+are positive. Equality therefore forces equal root lengths, leaf
+distances equal to their sums, and equal negative weights: the equal-arm
+star \(\operatorname{CS}(1,3)\).
+
+For a \(2+2\) vector, negative type implies \(d^p z=\lambda\mathbf1\).
+The potential \(\lambda\) is nonzero: otherwise Ercan's transport at any
+vertex would produce a nonzero equality vector supported on only three
+points of an inverted Ptolemaic metric, contradicting their strictness.
+Choose a vertex whose coefficient has the sign of \(\lambda\). Its
+transported sign flips, giving a \(1+3\) pattern after a global sign
+change. The inverted metric is the equal-arm star. Inverting back at the
+relevant independent vertex gives \(\tfrac12\operatorname{CS}(2,2)\),
+hence the second similarity type. Conversely both displayed metrics
+attain equality by direct substitution. The transport and the
+sign-selection mechanism are {[}E, Theorems 8.1--8.2{]}; only their
+equality specialisation is being used. \(\square\)
+
+This elementary consequence does not settle five-point equality. In
+particular we do not replace Ercan's system of five-point equality
+conditions by an unsupported classification. The local theorem above is
+valid at \(\operatorname{CS}(2,3)\), regardless of whether another
+five-point equality family exists.
+
+\textbf{Proposition 7.2 (a quadratic four-point direction).} Put
+\(p=\log_2 3\). Take the four-point star with root lengths \(1+t,1-t,1\)
+and leaf distances their pairwise sums. Its mean root length is one and
+\(h=|t|\). Then \[\boxed{\Delta_p(d_t)=\frac{p(2p-3)}8t^2+O(t^4).}\] The
+coefficient is positive because \(3>2^{3/2}\). Therefore no positive
+local linear lower bound \(\Delta_p(d)\ge c h\) can hold near the
+four-point star.
+
+\emph{Proof.} The equality vector is \((3,-1,-1,-1)/\sqrt{12}\); the
+other restricted eigenvalues are both three. The first scalar variation
+is zero. The direct quadratic Rayleigh term is \(3p(p-1)t^2/8\), and the
+second-order eigenvector correction is \(p^2t^2/8\). Their difference is
+the coefficient displayed. Swapping the first two leaves changes \(t\)
+to \(-t\), so the simple eigenvalue is an even analytic function and the
+next term is \(O(t^4)\). The symbolic verifier reconstructs these terms
+from the six raw distances, not from the asserted coefficient.
+\(\square\)
+
+This is an obstruction to linear stability at four points, not a proof
+of a general quadratic lower stability theorem there. The different
+local order is a genuine distinction between that endpoint and the
+higher-cardinality split metrics.
+
+\subsection{8. Collision limits and an explicit smaller-cardinality
+gap}\label{collision-limits-and-an-explicit-smaller-cardinality-gap}
+
+The classification can be stated cleanly on the compactification,
+without mislabelling collisions as equality metrics on distinct points.
+
+\textbf{Proposition 8.1 (kernel at a collision limit).} Let a
+diameter-one Ptolemaic pseudometric on \(m\ge6\) labelled points have
+\(N<m\) equivalence classes under zero distance. At exponent \(p_m\),
+the null space of its restricted negative-type form consists exactly of
+vectors whose coefficient sum is zero separately in each equivalence
+class. Its dimension is \(m-N\).
+
+\emph{Proof.} The quotient is an \(N\)-point Ptolemaic metric. Since
+\(p_m<p_N\) for \(N\ge3\), the supplied threshold results and strict
+descent give strict \(p_m\)-negative type on the quotient. The \(N=2\)
+case is immediate. For any vector, the original quadratic form equals
+the quotient quadratic form applied to the class sums. On the zero-sum
+subspace it vanishes exactly when every class sum vanishes. \(\square\)
+
+Thus, conditional on the global threshold and classification, the zero
+set on the diameter-one compactification comprises exactly the collision
+strata and the finitely many non-colliding split copies. The collision
+kernel has dimension \(m-N\); a genuine extremiser has one nontrivial
+null direction, of full support.
+
+A useful quantitative input for a future explicit global constant is
+available without a compactness argument.
+
+\textbf{Proposition 8.2 (explicit strict-descent gap).} Suppose an
+\(N\)-point metric \(d\), \(N\ge2\), has \(q\)-negative type and minimum
+distance at least \(\eta>0\). If \(0<p<q\) and \(\alpha=p/q\), then
+\[\boxed{\Delta_p(d)\ge
+\frac{\eta^p}{2\Gamma(1-\alpha)\,[\log(2(N-1))]^\alpha}.}\]
+
+\emph{Proof.} Realise \(d^q\) as squared Euclidean distances. The
+Gaussian kernel \(K_t=(e^{-td_{ij}^q})\) is positive semidefinite: for a
+Euclidean realisation \(d_{ij}^q=\|x_i-x_j\|^2\), expand
+\(e^{2t\langle x_i,x_j\rangle}\) as a nonnegative sum of positive
+semidefinite Gram powers, then multiply by the positive diagonal factors
+\(e^{-t\|x_i\|^2}\). For \(t\ge t_0=\log(2(N-1))/\eta^q\), every
+off-diagonal entry is at most \(1/[2(N-1)]\), so \(K_t\succeq I/2\) by
+diagonal dominance. For a unit zero-sum vector, \[-z^{\mathsf T}d^p z
+=\frac{\alpha}{\Gamma(1-\alpha)}
+\int_0^\infty z^{\mathsf T}K_tz\,t^{-1-\alpha}\,dt
+\ge\frac{t_0^{-\alpha}}{2\Gamma(1-\alpha)}.\] This is the asserted
+bound. The Gaussian positivity and integral representation are the
+standard strict-descent mechanism; the explicit tail estimate is the
+calculation used here. \(\square\)
+
+For example, proper six-point submetrics at exponent \(p_7\) admit this
+bound with \(q=1\), under the six-point threshold premise. This removes
+one source of non-effective constants in a quantitative inverse proof.
+It does not by itself yield a numerical \(C_\eta\) for the full
+seven-point problem. An explicit global constant and uniform
+collision-versus-rigidity estimates remain open tasks in this
+supplement.
+
+\subsection{9. Verification, novelty boundaries and next
+obligations}\label{verification-novelty-boundaries-and-next-obligations}
+
+The supplied v0.2 archive replayed in full mode with the nested
+companion exact replay. Its exact, symbolic and LP reports matched the
+supplied files; the search trial records matched, while the search
+summary differed in runtime metadata. The unchanged replay receipt
+records the difference. We did not authenticate the reviewers or treat
+their reports as external specialist endorsements.
+
+The new verification has three distinct roles:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  The symbolic script verifies all eighteen universal rational-function
+  certificates by direct orbit counts. Positive-coefficient expansions
+  prove the required inequalities for every real parameter \(k\ge k_0\),
+  hence every integer cardinality in the stated families. It also
+  re-derives the first-variation and four-point quadratic coefficients.
+\item
+  A separate standard-library rational script enumerates original
+  labelled constraints, checks the thirty-six small certificates and
+  seventy-two sampled evaluations of the general certificates, verifies
+  all sharp primal directions and their exact Ptolemaic integrations,
+  and checks the small-star examples. The sampled dimensions are
+  implementation checks only.
+\item
+  Numerical perturbation and critical-exponent calculations corroborate
+  the analytic formulas. The seeded convex-mixture trials combine only
+  the displayed lower extremiser with the inward upper extremiser for
+  each split; they do not sample the full feasible cone. They neither
+  establish universal bounds nor substitute for an equality
+  classification. High-precision records are retained separately.
+\end{enumerate}
+
+In version 0.3.1 all proof-critical Python assertions have been replaced
+by explicit exception checks. Direct and replay entry points are tested
+under normal Python, \texttt{-O}, \texttt{-OO}, and both optimisation
+environment settings. Disposable negative controls alter a multiplier or
+the exact identity and regenerate the manifest, so checksum failure
+cannot mask the mathematical test. The retained mode-control report
+states the executed scope. These software checks do not formally verify
+the analytic proofs.
+
+The dependency split is: Sections 3--5 use direct geometry, exact
+certificates and the written spectral estimate; Section 6 adds the
+classical endpoint/strict-descent results; Section 7 imports the public
+small-cardinality results and Ercan's transport; Section 8 imports the
+companion's threshold premises for the quotient interpretation. Only the
+claim that the local models exhaust all global equality cases
+additionally uses the retained v0.2 classification.
+
+The certificate tables are part of the proof evidence, not merely
+exploratory solver output. No optimisation solver is needed by either
+exact verifier. Numerical linear programming was used during discovery,
+and its exploratory scripts and logs are retained under
+\texttt{provenance/discovery/} rather than described as proof
+certificates.
+
+The following remain unproved here: a classification of five-point
+equality, a full quadratic stability theorem at four points, a numerical
+global separated-class constant, or a dimension-uniform sharp
+second-order remainder. The critical-exponent theorem has a proved
+fixed-cardinality expansion, not a numerical claim about all
+neighbourhood sizes. The local all-size result does not require the
+unrefereed companion; the global equality interpretation does.
+Historical priority has not been established for any new lemma.
+
+\subsection{References}\label{references}
+
+\subsubsection{Source manuscripts and immediate
+predecessors}\label{source-manuscripts-and-immediate-predecessors}
+
+{[}B{]} Baker, M., Huh, J., Kummer, M., \& Lorscheid, O. (2026).
+\emph{Lorentzian polynomials and matroids over triangular hyperfields.
+Part 2: Analytic aspects} (Version 2) {[}Preprint{]}. arXiv.
+\url{https://arxiv.org/abs/2607.15375v2}
+
+{[}E{]} Ercan, E. (2026). \emph{Ptolemaic negative type and the values
+q(6) and q(7)} (Version 1) {[}Preprint{]}. arXiv.
+\url{https://arxiv.org/abs/2608.20606v1}
+
+Companion manuscript. (2026). \emph{Sharp negative type of finite
+Ptolemaic metrics} (Unrefereed version 1.0). Supplied Evidence Press
+research bundle, retained inside the immutable v0.2 input.
+
+Supplied research manuscript. (2026). \emph{Rigidity at the sharp
+Ptolemaic negative-type threshold} (Research version 0.2). Supplied 27
+September 2026; retained unchanged in the input archive under
+\texttt{provenance/}.
+
+\subsubsection{Matrix perturbation and strict
+descent}\label{matrix-perturbation-and-strict-descent}
+
+{[}K{]} Kato, T. (1995). \emph{Perturbation theory for linear operators}
+(Reprint of the 1980 edition). Springer.
+\url{https://doi.org/10.1007/978-3-642-66282-9}
+
+{[}LW{]} Li, H., \& Weston, A. (2010). Strict p-negative type of a
+metric space. \emph{Positivity, 14}(3), 529--545.
+\url{https://doi.org/10.1007/s11117-009-0035-2}. Consulted preprint:
+\url{https://arxiv.org/abs/0901.0695}
+
+{[}S{]} Sánchez, S. (2011). \emph{On the supremal p-negative type of a
+finite metric space} {[}Preprint{]}.
+\url{https://arxiv.org/abs/1108.0451}
+
+{[}R{]} Robertson, G. (2025). \emph{Spectral properties of the Gramian
+of finite ultrametric spaces} {[}Preprint{]}.
+\url{https://arxiv.org/abs/2504.14840}
+
+{[}SUPP{]} Anonymous (2026). \emph{Ptolemaic split stability: versioned
+proof supplement}, v0.3.1-candidate. Complete tables, certificates, code
+and retained predecessor. Repository:
+\url{https://github.com/ipitchford/ptolemaic-split-stability} . Version
+DOI: \url{https://doi.org/10.5281/zenodo.23000081}
+\end{document}

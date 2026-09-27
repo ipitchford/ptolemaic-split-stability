@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "1.0",
+  "contributionMap": [
+    {
+      "claim": "Exact split-cone constants and local slopes",
+      "unit": "statement",
+      "paperLocation": "Sections 2–5",
+      "searches": [
+        {
+          "date": "2026-09-27",
+          "query": "\"Ptolemaic\" \"split\" \"stability\"",
+          "corpus": "Bounded public web and source-linked primary full text at publication intake"
+        },
+        {
+          "date": "2026-09-27",
+          "query": "\"supremal negative type\" matrix criterion Sánchez",
+          "corpus": "Bounded public web and source-linked primary full text at publication intake"
+        },
+        {
+          "date": "2026-09-27",
+          "query": "\"negative type\" quantitative gap Li Weston",
+          "corpus": "Bounded public web and source-linked primary full text at publication intake"
+        }
+      ],
+      "closestPriorWork": "SOURCES.md: Sánchez, Li–Weston, Ercan, Baker–Huh–Kummer–Lorscheid and supplied companion",
+      "verdict": "not-established"
+    },
+    {
+      "claim": "Split-specific critical-exponent first variation",
+      "unit": "statement",
+      "paperLocation": "Section 6",
+      "searches": [
+        {
+          "date": "2026-09-27",
+          "query": "\"Ptolemaic\" \"split\" \"stability\"",
+          "corpus": "Bounded public web and source-linked primary full text at publication intake"
+        },
+        {
+          "date": "2026-09-27",
+          "query": "\"supremal negative type\" matrix criterion Sánchez",
+          "corpus": "Bounded public web and source-linked primary full text at publication intake"
+        },
+        {
+          "date": "2026-09-27",
+          "query": "\"negative type\" quantitative gap Li Weston",
+          "corpus": "Bounded public web and source-linked primary full text at publication intake"
+        }
+      ],
+      "closestPriorWork": "SOURCES.md: Sánchez, Li–Weston, Ercan, Baker–Huh–Kummer–Lorscheid and supplied companion",
+      "verdict": "not-established"
+    },
+    {
+      "claim": "Matrix criterion, strict descent, inversion transport",
+      "unit": "method",
+      "paperLocation": "Sections 1,6–8",
+      "searches": [
+        {
+          "date": "2026-09-27",
+          "query": "\"Ptolemaic\" \"split\" \"stability\"",
+          "corpus": "Bounded public web and source-linked primary full text at publication intake"
+        },
+        {
+          "date": "2026-09-27",
+          "query": "\"supremal negative type\" matrix criterion Sánchez",
+          "corpus": "Bounded public web and source-linked primary full text at publication intake"
+        },
+        {
+          "date": "2026-09-27",
+          "query": "\"negative type\" quantitative gap Li Weston",
+          "corpus": "Bounded public web and source-linked primary full text at publication intake"
+        }
+      ],
+      "closestPriorWork": "SOURCES.md: Sánchez, Li–Weston, Ercan, Baker–Huh–Kummer–Lorscheid and supplied companion",
+      "verdict": "known-cited"
+    }
+  ],
+  "sourcesReadInFull": [
+    {
+      "citation": "See SOURCES.md",
+      "usedFor": "Relevant theorem contexts, assumptions and dependency comparison",
+      "readWhat": "Full relevant arguments, not all pages of all works; intake check is retrospective.",
+      "date": "2026-09-27",
+      "evidenceLocator": "SOURCES.md; CITATION_AUDIT.md"
+    }
+  ],
+  "limitationTriage": [
+    {
+      "limitation": "Optimisation strips assertions",
+      "closingQuestion": "Does rehashed corruption reject under all Python modes?",
+      "triedOrSearched": "Explicit exceptions and 70 controls plus original reviewer test",
+      "estimatedCost": "Bounded implementation repair",
+      "cheap": true,
+      "decision": "CLOSED",
+      "reasonOpen": "Not applicable after repair",
+      "whyNotClosedNow": "Closed; current controls pass."
+    },
+    {
+      "limitation": "General framework, second family and global quantitative constants",
+      "closingQuestion": "Do the present split proofs establish the extension?",
+      "triedOrSearched": "Reviewed both supplied proposals and dependency scope",
+      "estimatedCost": "New mathematical research",
+      "cheap": false,
+      "decision": "OPEN",
+      "reasonOpen": "Concrete family does not prove an abstract theorem or second example",
+      "whyNotClosedNow": "Outside corrected-publication scope; recorded future project."
+    }
+  ],
+  "extensionScout": {
+    "by": "Codex producer-side review response",
+    "date": "2026-09-27",
+    "proposals": [
+      "Transfer cone/spectral/realisation framework to a second family"
+    ],
+    "actions": [
+      "Retained as future research; strengthened present source comparison and verifier."
+    ]
+  }
+}

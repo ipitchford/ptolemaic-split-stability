@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "date": "2026-09-27",
+  "version": "0.3.1-candidate",
+  "pages": 10,
+  "pdfSha256": "94667d26b5ad1933f0fd6baefafb3daa44494d96b8457418d191147dc03280d8",
+  "compilation": "Local pdfLaTeX and desktop built-in compiler succeeded",
+  "text": "Raw TeX preflight: zero findings",
+  "visual": "All ten pages inspected: no clipping, overlaps or missing glyphs seen; tables, equations, reference links and Anonymous attribution present.",
+  "limitations": "Human-readable visual inspection by publication agent, not external mathematical review."
+}

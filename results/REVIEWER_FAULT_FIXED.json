@@ -1,0 +1,56 @@
+{
+  "mutation": {
+    "record": 0,
+    "field": "values[0]",
+    "from": "9/10",
+    "to": "-1"
+  },
+  "manifest_updated": true,
+  "original_untouched": true,
+  "runs": [
+    {
+      "mode": "normal",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<local-publication-workspace>/reviewer-fault-fixed/disposable_mutated_bundle/replay.py\", line 61, in <module>\n    a=p.parse_args();main(a.mode,a.output)\n                     ~~~~^^^^^^^^^^^^^^^^^\n  File \"<local-publication-workspace>/reviewer-fault-fixed/disposable_mutated_bundle/replay.py\", line 47, in main\n    raise RuntimeError(f'{name} failed; read {out/name}.log')\nRuntimeError: exact failed; read <local-publication-workspace>/reviewer-fault-fixed/fault_normal/exact.log\n",
+      "report": {
+        "version": "0.3",
+        "mode": "exact",
+        "status": "FAIL",
+        "formal_proof_assistant": false,
+        "scope": "Exact algebra and certificates plus optional numerical corroboration; not formal verification of the analytic proof.",
+        "manifest_files_verified": 48,
+        "jobs": [
+          {
+            "job": "exact",
+            "exit_code": 1,
+            "elapsed_seconds": 0.046,
+            "reports": {}
+          }
+        ]
+      }
+    },
+    {
+      "mode": "optimised",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<local-publication-workspace>/reviewer-fault-fixed/disposable_mutated_bundle/replay.py\", line 61, in <module>\n    a=p.parse_args();main(a.mode,a.output)\n                     ~~~~^^^^^^^^^^^^^^^^^\n  File \"<local-publication-workspace>/reviewer-fault-fixed/disposable_mutated_bundle/replay.py\", line 47, in main\n    raise RuntimeError(f'{name} failed; read {out/name}.log')\nRuntimeError: exact failed; read <local-publication-workspace>/reviewer-fault-fixed/fault_optimised/exact.log\n",
+      "report": {
+        "version": "0.3",
+        "mode": "exact",
+        "status": "FAIL",
+        "formal_proof_assistant": false,
+        "scope": "Exact algebra and certificates plus optional numerical corroboration; not formal verification of the analytic proof.",
+        "manifest_files_verified": 48,
+        "jobs": [
+          {
+            "job": "exact",
+            "exit_code": 1,
+            "elapsed_seconds": 0.046,
+            "reports": {}
+          }
+        ]
+      }
+    }
+  ]
+}

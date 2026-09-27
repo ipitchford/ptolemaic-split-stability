@@ -1,0 +1,12 @@
+{
+  "counts": {
+    "constraint_rows": 155436,
+    "primal_directions": 40,
+    "ptolemy_checks": 182856,
+    "sampled_generic_certificates": 72,
+    "small_certificates": 36,
+    "triangle_checks": 125064
+  },
+  "status": "PASS",
+  "universal_claims_are_not_inferred_from_sampled_k": true
+}

@@ -1,0 +1,832 @@
+{
+  "all_size_derivative": "verified",
+  "formal_proof_assistant": false,
+  "four_point_quadratic_coefficient": "p*(2*p - 3)/8",
+  "sharp_primal_formulas": "verified, including universal balanced feasibility",
+  "status": "PASS",
+  "symbolic_certificate_families": 18,
+  "universal_certificate_details": [
+    {
+      "kind": "A",
+      "nonnegativity_certificates": [
+        {
+          "denominator": "2*x + 8",
+          "numerator": "2*x + 9"
+        },
+        {
+          "denominator": "2",
+          "numerator": "1"
+        },
+        {
+          "denominator": "1",
+          "numerator": "1",
+          "upper_two": {
+            "denominator": "1",
+            "numerator": "1"
+          }
+        },
+        {
+          "denominator": "1",
+          "numerator": "1",
+          "upper_two": {
+            "denominator": "1",
+            "numerator": "1"
+          }
+        },
+        {
+          "denominator": "2*x + 8",
+          "numerator": "3*x + 13",
+          "upper_two": {
+            "denominator": "2*x + 8",
+            "numerator": "x + 3"
+          }
+        }
+      ],
+      "offset": 0,
+      "sign": 1
+    },
+    {
+      "kind": "A",
+      "nonnegativity_certificates": [
+        {
+          "denominator": "2*x + 8",
+          "numerator": "2*x + 7"
+        },
+        {
+          "denominator": "2",
+          "numerator": "3"
+        },
+        {
+          "denominator": "1",
+          "numerator": "1",
+          "upper_two": {
+            "denominator": "1",
+            "numerator": "1"
+          }
+        },
+        {
+          "denominator": "1",
+          "numerator": "1",
+          "upper_two": {
+            "denominator": "1",
+            "numerator": "1"
+          }
+        },
+        {
+          "denominator": "2*x + 8",
+          "numerator": "x + 3",
+          "upper_two": {
+            "denominator": "2*x + 8",
+            "numerator": "3*x + 13"
+          }
+        }
+      ],
+      "offset": 0,
+      "sign": -1
+    },
+    {
+      "kind": "X",
+      "nonnegativity_certificates": [
+        {
+          "denominator": "2*x**2 + 14*x + 24",
+          "numerator": "2*x**2 + 13*x + 15"
+        },
+        {
+          "denominator": "2*x + 8",
+          "numerator": "3*x + 15"
+        },
+        {
+          "denominator": "2*x + 6",
+          "numerator": "x + 5"
+        },
+        {
+          "denominator": "1",
+          "numerator": "0"
+        },
+        {
+          "denominator": "x**3 + 10*x**2 + 33*x + 36",
+          "numerator": "x**3 + 10*x**2 + 33*x + 38",
+          "upper_two": {
+            "denominator": "x**3 + 10*x**2 + 33*x + 36",
+            "numerator": "x**3 + 10*x**2 + 33*x + 34"
+          }
+        },
+        {
+          "denominator": "x**2 + 7*x + 12",
+          "numerator": "x**2 + 7*x + 11",
+          "upper_two": {
+            "denominator": "x**2 + 7*x + 12",
+            "numerator": "x**2 + 7*x + 13"
+          }
+        },
+        {
+          "denominator": "x + 3",
+          "numerator": "x + 4",
+          "upper_two": {
+            "denominator": "x + 3",
+            "numerator": "x + 2"
+          }
+        },
+        {
+          "denominator": "2",
+          "numerator": "1",
+          "upper_two": {
+            "denominator": "2",
+            "numerator": "3"
+          }
+        }
+      ],
+      "offset": 0,
+      "sign": 1
+    },
+    {
+      "kind": "X",
+      "nonnegativity_certificates": [
+        {
+          "denominator": "2*x**2 + 14*x + 24",
+          "numerator": "2*x**2 + 15*x + 33"
+        },
+        {
+          "denominator": "2*x + 8",
+          "numerator": "x + 1"
+        },
+        {
+          "denominator": "2*x + 6",
+          "numerator": "3*x + 7"
+        },
+        {
+          "denominator": "1",
+          "numerator": "2"
+        },
+        {
+          "denominator": "x**3 + 10*x**2 + 33*x + 36",
+          "numerator": "x**3 + 10*x**2 + 33*x + 34",
+          "upper_two": {
+            "denominator": "x**3 + 10*x**2 + 33*x + 36",
+            "numerator": "x**3 + 10*x**2 + 33*x + 38"
+          }
+        },
+        {
+          "denominator": "x**2 + 7*x + 12",
+          "numerator": "x**2 + 7*x + 13",
+          "upper_two": {
+            "denominator": "x**2 + 7*x + 12",
+            "numerator": "x**2 + 7*x + 11"
+          }
+        },
+        {
+          "denominator": "x + 3",
+          "numerator": "x + 2",
+          "upper_two": {
+            "denominator": "x + 3",
+            "numerator": "x + 4"
+          }
+        },
+        {
+          "denominator": "2",
+          "numerator": "3",
+          "upper_two": {
+            "denominator": "2",
+            "numerator": "1"
+          }
+        }
+      ],
+      "offset": 0,
+      "sign": -1
+    },
+    {
+      "kind": "B",
+      "nonnegativity_certificates": [
+        {
+          "denominator": "x + 3",
+          "numerator": "x + 2"
+        },
+        {
+          "denominator": "2*x + 6",
+          "numerator": "2*x + 5"
+        },
+        {
+          "denominator": "2",
+          "numerator": "2*x + 11"
+        },
+        {
+          "denominator": "x**2 + 7*x + 12",
+          "numerator": "x**2 + 7*x + 14",
+          "upper_two": {
+            "denominator": "x**2 + 7*x + 12",
+            "numerator": "x**2 + 7*x + 10"
+          }
+        },
+        {
+          "denominator": "x**2 + 7*x + 12",
+          "numerator": "x**2 + 7*x + 13",
+          "upper_two": {
+            "denominator": "x**2 + 7*x + 12",
+            "numerator": "x**2 + 7*x + 11"
+          }
+        },
+        {
+          "denominator": "1",
+          "numerator": "0",
+          "upper_two": {
+            "denominator": "1",
+            "numerator": "2"
+          }
+        }
+      ],
+      "offset": 0,
+      "sign": 1
+    },
+    {
+      "kind": "B",
+      "nonnegativity_certificates": [
+        {
+          "denominator": "x + 2",
+          "numerator": "x + 5"
+        },
+        {
+          "denominator": "1",
+          "numerator": "0"
+        },
+        {
+          "denominator": "1",
+          "numerator": "0"
+        },
+        {
+          "denominator": "x**2 + 6*x + 8",
+          "numerator": "x**2 + 6*x + 2",
+          "upper_two": {
+            "denominator": "x**2 + 6*x + 8",
+            "numerator": "x**2 + 6*x + 14"
+          }
+        },
+        {
+          "denominator": "x + 4",
+          "numerator": "x + 6",
+          "upper_two": {
+            "denominator": "x + 4",
+            "numerator": "x + 2"
+          }
+        },
+        {
+          "denominator": "x + 4",
+          "numerator": "1",
+          "upper_two": {
+            "denominator": "x + 4",
+            "numerator": "2*x + 7"
+          }
+        }
+      ],
+      "offset": 0,
+      "sign": -1
+    },
+    {
+      "kind": "A",
+      "nonnegativity_certificates": [
+        {
+          "denominator": "2*x + 8",
+          "numerator": "2*x + 9"
+        },
+        {
+          "denominator": "2*x + 8",
+          "numerator": "x + 5"
+        },
+        {
+          "denominator": "1",
+          "numerator": "1",
+          "upper_two": {
+            "denominator": "1",
+            "numerator": "1"
+          }
+        },
+        {
+          "denominator": "1",
+          "numerator": "1",
+          "upper_two": {
+            "denominator": "1",
+            "numerator": "1"
+          }
+        },
+        {
+          "denominator": "2",
+          "numerator": "3",
+          "upper_two": {
+            "denominator": "2",
+            "numerator": "1"
+          }
+        }
+      ],
+      "offset": 1,
+      "sign": 1
+    },
+    {
+      "kind": "A",
+      "nonnegativity_certificates": [
+        {
+          "denominator": "2*x + 8",
+          "numerator": "2*x + 7"
+        },
+        {
+          "denominator": "2*x + 8",
+          "numerator": "3*x + 11"
+        },
+        {
+          "denominator": "1",
+          "numerator": "1",
+          "upper_two": {
+            "denominator": "1",
+            "numerator": "1"
+          }
+        },
+        {
+          "denominator": "1",
+          "numerator": "1",
+          "upper_two": {
+            "denominator": "1",
+            "numerator": "1"
+          }
+        },
+        {
+          "denominator": "2",
+          "numerator": "1",
+          "upper_two": {
+            "denominator": "2",
+            "numerator": "3"
+          }
+        }
+      ],
+      "offset": 1,
+      "sign": -1
+    },
+    {
+      "kind": "X",
+      "nonnegativity_certificates": [
+        {
+          "denominator": "2*x**3 + 20*x**2 + 66*x + 72",
+          "numerator": "2*x**3 + 19*x**2 + 54*x + 41"
+        },
+        {
+          "denominator": "2*x**2 + 14*x + 24",
+          "numerator": "3*x**2 + 24*x + 47"
+        },
+        {
+          "denominator": "2*x**2 + 14*x + 24",
+          "numerator": "x**2 + 10*x + 23"
+        },
+        {
+          "denominator": "2*x + 8",
+          "numerator": "1"
+        },
+        {
+          "denominator": "x**3 + 8*x**2 + 21*x + 18",
+          "numerator": "x**3 + 8*x**2 + 21*x + 20",
+          "upper_two": {
+            "denominator": "x**3 + 8*x**2 + 21*x + 18",
+            "numerator": "x**3 + 8*x**2 + 21*x + 16"
+          }
+        },
+        {
+          "denominator": "x**2 + 5*x + 6",
+          "numerator": "x**2 + 5*x + 5",
+          "upper_two": {
+            "denominator": "x**2 + 5*x + 6",
+            "numerator": "x**2 + 5*x + 7"
+          }
+        },
+        {
+          "denominator": "x + 3",
+          "numerator": "x + 4",
+          "upper_two": {
+            "denominator": "x + 3",
+            "numerator": "x + 2"
+          }
+        },
+        {
+          "denominator": "2",
+          "numerator": "1",
+          "upper_two": {
+            "denominator": "2",
+            "numerator": "3"
+          }
+        }
+      ],
+      "offset": 1,
+      "sign": 1
+    },
+    {
+      "kind": "X",
+      "nonnegativity_certificates": [
+        {
+          "denominator": "2*x**3 + 20*x**2 + 66*x + 72",
+          "numerator": "2*x**3 + 21*x**2 + 78*x + 103"
+        },
+        {
+          "denominator": "2*x**2 + 14*x + 24",
+          "numerator": "x**2 + 4*x + 1"
+        },
+        {
+          "denominator": "2*x**2 + 14*x + 24",
+          "numerator": "3*x**2 + 18*x + 25"
+        },
+        {
+          "denominator": "2*x + 8",
+          "numerator": "4*x + 15"
+        },
+        {
+          "denominator": "x**3 + 8*x**2 + 21*x + 18",
+          "numerator": "x**3 + 8*x**2 + 21*x + 16",
+          "upper_two": {
+            "denominator": "x**3 + 8*x**2 + 21*x + 18",
+            "numerator": "x**3 + 8*x**2 + 21*x + 20"
+          }
+        },
+        {
+          "denominator": "x**2 + 5*x + 6",
+          "numerator": "x**2 + 5*x + 7",
+          "upper_two": {
+            "denominator": "x**2 + 5*x + 6",
+            "numerator": "x**2 + 5*x + 5"
+          }
+        },
+        {
+          "denominator": "x + 3",
+          "numerator": "x + 2",
+          "upper_two": {
+            "denominator": "x + 3",
+            "numerator": "x + 4"
+          }
+        },
+        {
+          "denominator": "2",
+          "numerator": "3",
+          "upper_two": {
+            "denominator": "2",
+            "numerator": "1"
+          }
+        }
+      ],
+      "offset": 1,
+      "sign": -1
+    },
+    {
+      "kind": "B",
+      "nonnegativity_certificates": [
+        {
+          "denominator": "x + 2",
+          "numerator": "x + 1"
+        },
+        {
+          "denominator": "1",
+          "numerator": "1"
+        },
+        {
+          "denominator": "1",
+          "numerator": "x + 5"
+        },
+        {
+          "denominator": "x**2 + 5*x + 6",
+          "numerator": "x**2 + 5*x + 8",
+          "upper_two": {
+            "denominator": "x**2 + 5*x + 6",
+            "numerator": "x**2 + 5*x + 4"
+          }
+        },
+        {
+          "denominator": "1",
+          "numerator": "1",
+          "upper_two": {
+            "denominator": "1",
+            "numerator": "1"
+          }
+        },
+        {
+          "denominator": "1",
+          "numerator": "0",
+          "upper_two": {
+            "denominator": "1",
+            "numerator": "2"
+          }
+        }
+      ],
+      "offset": 1,
+      "sign": 1
+    },
+    {
+      "kind": "B",
+      "nonnegativity_certificates": [
+        {
+          "denominator": "x + 2",
+          "numerator": "x + 5"
+        },
+        {
+          "denominator": "1",
+          "numerator": "0"
+        },
+        {
+          "denominator": "1",
+          "numerator": "0"
+        },
+        {
+          "denominator": "x**2 + 5*x + 6",
+          "numerator": "x**2 + 5*x",
+          "upper_two": {
+            "denominator": "x**2 + 5*x + 6",
+            "numerator": "x**2 + 5*x + 12"
+          }
+        },
+        {
+          "denominator": "x + 3",
+          "numerator": "x + 5",
+          "upper_two": {
+            "denominator": "x + 3",
+            "numerator": "x + 1"
+          }
+        },
+        {
+          "denominator": "1",
+          "numerator": "0",
+          "upper_two": {
+            "denominator": "1",
+            "numerator": "2"
+          }
+        }
+      ],
+      "offset": 1,
+      "sign": -1
+    },
+    {
+      "kind": "A",
+      "nonnegativity_certificates": [
+        {
+          "denominator": "2*x + 12",
+          "numerator": "2*x + 13"
+        },
+        {
+          "denominator": "2*x + 12",
+          "numerator": "x + 9"
+        },
+        {
+          "denominator": "1",
+          "numerator": "1",
+          "upper_two": {
+            "denominator": "1",
+            "numerator": "1"
+          }
+        },
+        {
+          "denominator": "1",
+          "numerator": "1",
+          "upper_two": {
+            "denominator": "1",
+            "numerator": "1"
+          }
+        },
+        {
+          "denominator": "2*x + 12",
+          "numerator": "3*x + 16",
+          "upper_two": {
+            "denominator": "2*x + 12",
+            "numerator": "x + 8"
+          }
+        }
+      ],
+      "offset": 2,
+      "sign": 1
+    },
+    {
+      "kind": "A",
+      "nonnegativity_certificates": [
+        {
+          "denominator": "2*x + 12",
+          "numerator": "2*x + 11"
+        },
+        {
+          "denominator": "2*x + 12",
+          "numerator": "3*x + 15"
+        },
+        {
+          "denominator": "1",
+          "numerator": "1",
+          "upper_two": {
+            "denominator": "1",
+            "numerator": "1"
+          }
+        },
+        {
+          "denominator": "1",
+          "numerator": "1",
+          "upper_two": {
+            "denominator": "1",
+            "numerator": "1"
+          }
+        },
+        {
+          "denominator": "2*x + 12",
+          "numerator": "x + 8",
+          "upper_two": {
+            "denominator": "2*x + 12",
+            "numerator": "3*x + 16"
+          }
+        }
+      ],
+      "offset": 2,
+      "sign": -1
+    },
+    {
+      "kind": "X",
+      "nonnegativity_certificates": [
+        {
+          "denominator": "2*x**3 + 26*x**2 + 108*x + 144",
+          "numerator": "2*x**3 + 25*x**2 + 97*x + 112"
+        },
+        {
+          "denominator": "2*x**2 + 18*x + 36",
+          "numerator": "3*x**2 + 28*x + 61"
+        },
+        {
+          "denominator": "2*x**2 + 20*x + 48",
+          "numerator": "x**2 + 13*x + 40"
+        },
+        {
+          "denominator": "2*x + 12",
+          "numerator": "x + 7"
+        },
+        {
+          "denominator": "x**4 + 15*x**3 + 80*x**2 + 180*x + 144",
+          "numerator": "x**4 + 15*x**3 + 80*x**2 + 180*x + 148",
+          "upper_two": {
+            "denominator": "x**4 + 15*x**3 + 80*x**2 + 180*x + 144",
+            "numerator": "x**4 + 15*x**3 + 80*x**2 + 180*x + 140"
+          }
+        },
+        {
+          "denominator": "x**3 + 11*x**2 + 36*x + 36",
+          "numerator": "x**3 + 11*x**2 + 36*x + 34",
+          "upper_two": {
+            "denominator": "x**3 + 11*x**2 + 36*x + 36",
+            "numerator": "x**3 + 11*x**2 + 36*x + 38"
+          }
+        },
+        {
+          "denominator": "x + 4",
+          "numerator": "x + 5",
+          "upper_two": {
+            "denominator": "x + 4",
+            "numerator": "x + 3"
+          }
+        },
+        {
+          "denominator": "2",
+          "numerator": "1",
+          "upper_two": {
+            "denominator": "2",
+            "numerator": "3"
+          }
+        }
+      ],
+      "offset": 2,
+      "sign": 1
+    },
+    {
+      "kind": "X",
+      "nonnegativity_certificates": [
+        {
+          "denominator": "2*x**3 + 26*x**2 + 108*x + 144",
+          "numerator": "2*x**3 + 27*x**2 + 119*x + 176"
+        },
+        {
+          "denominator": "2*x**2 + 18*x + 36",
+          "numerator": "x**2 + 8*x + 11"
+        },
+        {
+          "denominator": "2*x**2 + 20*x + 48",
+          "numerator": "3*x**2 + 27*x + 56"
+        },
+        {
+          "denominator": "2*x + 12",
+          "numerator": "3*x + 17"
+        },
+        {
+          "denominator": "x**4 + 15*x**3 + 80*x**2 + 180*x + 144",
+          "numerator": "x**4 + 15*x**3 + 80*x**2 + 180*x + 140",
+          "upper_two": {
+            "denominator": "x**4 + 15*x**3 + 80*x**2 + 180*x + 144",
+            "numerator": "x**4 + 15*x**3 + 80*x**2 + 180*x + 148"
+          }
+        },
+        {
+          "denominator": "x**3 + 11*x**2 + 36*x + 36",
+          "numerator": "x**3 + 11*x**2 + 36*x + 38",
+          "upper_two": {
+            "denominator": "x**3 + 11*x**2 + 36*x + 36",
+            "numerator": "x**3 + 11*x**2 + 36*x + 34"
+          }
+        },
+        {
+          "denominator": "x + 4",
+          "numerator": "x + 3",
+          "upper_two": {
+            "denominator": "x + 4",
+            "numerator": "x + 5"
+          }
+        },
+        {
+          "denominator": "2",
+          "numerator": "3",
+          "upper_two": {
+            "denominator": "2",
+            "numerator": "1"
+          }
+        }
+      ],
+      "offset": 2,
+      "sign": -1
+    },
+    {
+      "kind": "B",
+      "nonnegativity_certificates": [
+        {
+          "denominator": "x**3 + 13*x**2 + 54*x + 72",
+          "numerator": "x**3 + 12*x**2 + 45*x + 50"
+        },
+        {
+          "denominator": "x**2 + 10*x + 24",
+          "numerator": "x**2 + 10*x + 25"
+        },
+        {
+          "denominator": "1",
+          "numerator": "x + 5"
+        },
+        {
+          "denominator": "x**4 + 16*x**3 + 93*x**2 + 234*x + 216",
+          "numerator": "x**4 + 16*x**3 + 95*x**2 + 252*x + 260",
+          "upper_two": {
+            "denominator": "x**4 + 16*x**3 + 93*x**2 + 234*x + 216",
+            "numerator": "x**4 + 16*x**3 + 91*x**2 + 216*x + 172"
+          }
+        },
+        {
+          "denominator": "x**3 + 13*x**2 + 54*x + 72",
+          "numerator": "x**3 + 13*x**2 + 54*x + 70",
+          "upper_two": {
+            "denominator": "x**3 + 13*x**2 + 54*x + 72",
+            "numerator": "x**3 + 13*x**2 + 54*x + 74"
+          }
+        },
+        {
+          "denominator": "1",
+          "numerator": "0",
+          "upper_two": {
+            "denominator": "1",
+            "numerator": "2"
+          }
+        }
+      ],
+      "offset": 2,
+      "sign": 1
+    },
+    {
+      "kind": "B",
+      "nonnegativity_certificates": [
+        {
+          "denominator": "x**3 + 13*x**2 + 54*x + 72",
+          "numerator": "x**3 + 16*x**2 + 81*x + 130"
+        },
+        {
+          "denominator": "x**2 + 10*x + 24",
+          "numerator": "x + 5"
+        },
+        {
+          "denominator": "1",
+          "numerator": "0"
+        },
+        {
+          "denominator": "x**4 + 16*x**3 + 93*x**2 + 234*x + 216",
+          "numerator": "x**4 + 16*x**3 + 87*x**2 + 180*x + 100",
+          "upper_two": {
+            "denominator": "x**4 + 16*x**3 + 93*x**2 + 234*x + 216",
+            "numerator": "x**4 + 16*x**3 + 99*x**2 + 288*x + 332"
+          }
+        },
+        {
+          "denominator": "x**3 + 13*x**2 + 54*x + 72",
+          "numerator": "x**3 + 15*x**2 + 72*x + 110",
+          "upper_two": {
+            "denominator": "x**3 + 13*x**2 + 54*x + 72",
+            "numerator": "x**3 + 11*x**2 + 36*x + 34"
+          }
+        },
+        {
+          "denominator": "1",
+          "numerator": "0",
+          "upper_two": {
+            "denominator": "1",
+            "numerator": "2"
+          }
+        }
+      ],
+      "offset": 2,
+      "sign": -1
+    }
+  ]
+}

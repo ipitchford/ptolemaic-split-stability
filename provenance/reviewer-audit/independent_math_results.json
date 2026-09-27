@@ -1,0 +1,552 @@
+{
+  "status": "PASS",
+  "certificate_coverage": {
+    "small": 36,
+    "universal": 18
+  },
+  "raw_constraint_exact_dual_checks": {
+    "small_certificates": 36,
+    "universal_certificates_at_k13": 18,
+    "constraint_rows": 150810
+  },
+  "independent_numerical_lp": {
+    "face_problems": 72,
+    "pairs": [
+      {
+        "a": 2,
+        "r": 3,
+        "claimed_c": "6/5",
+        "observed_minimum": 1.2000000000000002,
+        "faces": [
+          {
+            "type": "A",
+            "sign": -1,
+            "feasible": true,
+            "minimum": 6.0
+          },
+          {
+            "type": "A",
+            "sign": 1,
+            "feasible": false,
+            "minimum": null
+          },
+          {
+            "type": "X",
+            "sign": -1,
+            "feasible": true,
+            "minimum": 1.5
+          },
+          {
+            "type": "X",
+            "sign": 1,
+            "feasible": true,
+            "minimum": 3.0
+          },
+          {
+            "type": "B",
+            "sign": -1,
+            "feasible": true,
+            "minimum": 1.2000000000000002
+          },
+          {
+            "type": "B",
+            "sign": 1,
+            "feasible": true,
+            "minimum": 1.5
+          }
+        ]
+      },
+      {
+        "a": 2,
+        "r": 4,
+        "claimed_c": "3/2",
+        "observed_minimum": 1.5,
+        "faces": [
+          {
+            "type": "A",
+            "sign": -1,
+            "feasible": true,
+            "minimum": 12.0
+          },
+          {
+            "type": "A",
+            "sign": 1,
+            "feasible": false,
+            "minimum": null
+          },
+          {
+            "type": "X",
+            "sign": -1,
+            "feasible": true,
+            "minimum": 3.4285714285714306
+          },
+          {
+            "type": "X",
+            "sign": 1,
+            "feasible": true,
+            "minimum": 4.0
+          },
+          {
+            "type": "B",
+            "sign": -1,
+            "feasible": true,
+            "minimum": 1.5
+          },
+          {
+            "type": "B",
+            "sign": 1,
+            "feasible": true,
+            "minimum": 6.0
+          }
+        ]
+      },
+      {
+        "a": 3,
+        "r": 3,
+        "claimed_c": "9/5",
+        "observed_minimum": 1.8000000000000007,
+        "faces": [
+          {
+            "type": "A",
+            "sign": -1,
+            "feasible": true,
+            "minimum": 6.0
+          },
+          {
+            "type": "A",
+            "sign": 1,
+            "feasible": true,
+            "minimum": 9.0
+          },
+          {
+            "type": "X",
+            "sign": -1,
+            "feasible": true,
+            "minimum": 3.857142857142854
+          },
+          {
+            "type": "X",
+            "sign": 1,
+            "feasible": true,
+            "minimum": 5.3999999999999995
+          },
+          {
+            "type": "B",
+            "sign": -1,
+            "feasible": true,
+            "minimum": 1.8000000000000007
+          },
+          {
+            "type": "B",
+            "sign": 1,
+            "feasible": true,
+            "minimum": 4.5
+          }
+        ]
+      },
+      {
+        "a": 3,
+        "r": 4,
+        "claimed_c": "3",
+        "observed_minimum": 3.0,
+        "faces": [
+          {
+            "type": "A",
+            "sign": -1,
+            "feasible": true,
+            "minimum": 12.0
+          },
+          {
+            "type": "A",
+            "sign": 1,
+            "feasible": true,
+            "minimum": 18.0
+          },
+          {
+            "type": "X",
+            "sign": -1,
+            "feasible": true,
+            "minimum": 7.200000000000003
+          },
+          {
+            "type": "X",
+            "sign": 1,
+            "feasible": true,
+            "minimum": 9.0
+          },
+          {
+            "type": "B",
+            "sign": -1,
+            "feasible": true,
+            "minimum": 3.0
+          },
+          {
+            "type": "B",
+            "sign": 1,
+            "feasible": true,
+            "minimum": 18.0
+          }
+        ]
+      },
+      {
+        "a": 3,
+        "r": 5,
+        "claimed_c": "60/11",
+        "observed_minimum": 5.454545454545455,
+        "faces": [
+          {
+            "type": "A",
+            "sign": -1,
+            "feasible": true,
+            "minimum": 20.0
+          },
+          {
+            "type": "A",
+            "sign": 1,
+            "feasible": true,
+            "minimum": 30.0
+          },
+          {
+            "type": "X",
+            "sign": -1,
+            "feasible": true,
+            "minimum": 11.538461538461544
+          },
+          {
+            "type": "X",
+            "sign": 1,
+            "feasible": true,
+            "minimum": 12.857142857142856
+          },
+          {
+            "type": "B",
+            "sign": -1,
+            "feasible": true,
+            "minimum": 5.454545454545455
+          },
+          {
+            "type": "B",
+            "sign": 1,
+            "feasible": true,
+            "minimum": 15.999999999999996
+          }
+        ]
+      },
+      {
+        "a": 4,
+        "r": 4,
+        "claimed_c": "5",
+        "observed_minimum": 5.000000000000002,
+        "faces": [
+          {
+            "type": "A",
+            "sign": -1,
+            "feasible": true,
+            "minimum": 12.0
+          },
+          {
+            "type": "A",
+            "sign": 1,
+            "feasible": true,
+            "minimum": 16.0
+          },
+          {
+            "type": "X",
+            "sign": -1,
+            "feasible": true,
+            "minimum": 10.666666666666671
+          },
+          {
+            "type": "X",
+            "sign": 1,
+            "feasible": true,
+            "minimum": 12.8
+          },
+          {
+            "type": "B",
+            "sign": -1,
+            "feasible": true,
+            "minimum": 5.000000000000002
+          },
+          {
+            "type": "B",
+            "sign": 1,
+            "feasible": true,
+            "minimum": 36.0
+          }
+        ]
+      },
+      {
+        "a": 4,
+        "r": 5,
+        "claimed_c": "10",
+        "observed_minimum": 10.0,
+        "faces": [
+          {
+            "type": "A",
+            "sign": -1,
+            "feasible": true,
+            "minimum": 20.0
+          },
+          {
+            "type": "A",
+            "sign": 1,
+            "feasible": true,
+            "minimum": 26.666666666666668
+          },
+          {
+            "type": "X",
+            "sign": -1,
+            "feasible": true,
+            "minimum": 17.142857142857125
+          },
+          {
+            "type": "X",
+            "sign": 1,
+            "feasible": true,
+            "minimum": 16.84210526315789
+          },
+          {
+            "type": "B",
+            "sign": -1,
+            "feasible": true,
+            "minimum": 10.0
+          },
+          {
+            "type": "B",
+            "sign": 1,
+            "feasible": true,
+            "minimum": 30.0
+          }
+        ]
+      },
+      {
+        "a": 4,
+        "r": 6,
+        "claimed_c": "10",
+        "observed_minimum": 10.0,
+        "faces": [
+          {
+            "type": "A",
+            "sign": -1,
+            "feasible": true,
+            "minimum": 30.0
+          },
+          {
+            "type": "A",
+            "sign": 1,
+            "feasible": true,
+            "minimum": 40.00000000000003
+          },
+          {
+            "type": "X",
+            "sign": -1,
+            "feasible": true,
+            "minimum": 25.000000000000007
+          },
+          {
+            "type": "X",
+            "sign": 1,
+            "feasible": true,
+            "minimum": 20.869565217391308
+          },
+          {
+            "type": "B",
+            "sign": -1,
+            "feasible": true,
+            "minimum": 10.0
+          },
+          {
+            "type": "B",
+            "sign": 1,
+            "feasible": true,
+            "minimum": 30.000000000000025
+          }
+        ]
+      },
+      {
+        "a": 5,
+        "r": 5,
+        "claimed_c": "25/2",
+        "observed_minimum": 12.5,
+        "faces": [
+          {
+            "type": "A",
+            "sign": -1,
+            "feasible": true,
+            "minimum": 20.0
+          },
+          {
+            "type": "A",
+            "sign": 1,
+            "feasible": true,
+            "minimum": 24.99999999999997
+          },
+          {
+            "type": "X",
+            "sign": -1,
+            "feasible": true,
+            "minimum": 22.727272727272712
+          },
+          {
+            "type": "X",
+            "sign": 1,
+            "feasible": true,
+            "minimum": 20.833333333333336
+          },
+          {
+            "type": "B",
+            "sign": -1,
+            "feasible": true,
+            "minimum": 12.5
+          },
+          {
+            "type": "B",
+            "sign": 1,
+            "feasible": true,
+            "minimum": 48.33333333333335
+          }
+        ]
+      },
+      {
+        "a": 5,
+        "r": 6,
+        "claimed_c": "15",
+        "observed_minimum": 15.0,
+        "faces": [
+          {
+            "type": "A",
+            "sign": -1,
+            "feasible": true,
+            "minimum": 30.0
+          },
+          {
+            "type": "A",
+            "sign": 1,
+            "feasible": true,
+            "minimum": 37.499999999999986
+          },
+          {
+            "type": "X",
+            "sign": -1,
+            "feasible": true,
+            "minimum": 32.999999999999986
+          },
+          {
+            "type": "X",
+            "sign": 1,
+            "feasible": true,
+            "minimum": 25.862068965517246
+          },
+          {
+            "type": "B",
+            "sign": -1,
+            "feasible": true,
+            "minimum": 15.0
+          },
+          {
+            "type": "B",
+            "sign": 1,
+            "feasible": true,
+            "minimum": 45.0
+          }
+        ]
+      },
+      {
+        "a": 5,
+        "r": 7,
+        "claimed_c": "15",
+        "observed_minimum": 15.0,
+        "faces": [
+          {
+            "type": "A",
+            "sign": -1,
+            "feasible": true,
+            "minimum": 42.0
+          },
+          {
+            "type": "A",
+            "sign": 1,
+            "feasible": true,
+            "minimum": 52.50000000000003
+          },
+          {
+            "type": "X",
+            "sign": -1,
+            "feasible": true,
+            "minimum": 44.999999999999986
+          },
+          {
+            "type": "X",
+            "sign": 1,
+            "feasible": true,
+            "minimum": 30.882352941176475
+          },
+          {
+            "type": "B",
+            "sign": -1,
+            "feasible": true,
+            "minimum": 15.0
+          },
+          {
+            "type": "B",
+            "sign": 1,
+            "feasible": true,
+            "minimum": 48.000000000000014
+          }
+        ]
+      },
+      {
+        "a": 6,
+        "r": 6,
+        "claimed_c": "18",
+        "observed_minimum": 17.99999999999999,
+        "faces": [
+          {
+            "type": "A",
+            "sign": -1,
+            "feasible": true,
+            "minimum": 30.0
+          },
+          {
+            "type": "A",
+            "sign": 1,
+            "feasible": true,
+            "minimum": 35.999999999999886
+          },
+          {
+            "type": "X",
+            "sign": -1,
+            "feasible": true,
+            "minimum": 41.000000000000036
+          },
+          {
+            "type": "X",
+            "sign": 1,
+            "feasible": true,
+            "minimum": 30.857142857142854
+          },
+          {
+            "type": "B",
+            "sign": -1,
+            "feasible": true,
+            "minimum": 17.99999999999999
+          },
+          {
+            "type": "B",
+            "sign": 1,
+            "feasible": true,
+            "minimum": 63.00000000000001
+          }
+        ]
+      }
+    ]
+  },
+  "spot_constants": {
+    "seven_point_p": 0.8300749985576875,
+    "seven_point_lower_slope": 0.07905476176739881,
+    "seven_point_upper_slope": 1.8973142824175715,
+    "four_point_quadratic_coefficient": 0.03366559440263164
+  },
+  "proof_limits": "The k=13 and floating-point LP checks are corroborative, not proofs for all k. The supplied universal symbolic proof was audited separately."
+}

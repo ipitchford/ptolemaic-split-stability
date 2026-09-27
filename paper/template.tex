@@ -1,0 +1,45 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=23mm,headheight=15pt,headsep=7mm,footskip=10mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsthm}
+\usepackage{newtxtext,newtxmath}
+\usepackage{booktabs,longtable,array,calc}
+\usepackage{microtype,xurl,graphicx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\setlength{\emergencystretch}{2em}
+\linespread{1.02}
+\setcounter{secnumdepth}{0}
+\setcounter{tocdepth}{2}
+\newcommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\providecommand{\pandocbounded}[1]{#1}
+% Compatibility for uncaptioned Pandoc longtables with recent LaTeX.
+\newcounter{none}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize Ptolemaic rigidity and stability}
+\fancyhead[R]{\footnotesize Candidate v0.3.1}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\titleformat{\section}{\large\bfseries}{\thesection}{0pt}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\itshape}{\thesubsubsection}{0pt}{}
+\hypersetup{pdftitle={$title$},pdfauthor={Anonymous},pdfsubject={Research proof supplement; unrefereed}}
+$if(highlighting-macros)$
+$highlighting-macros$
+$endif$
+\begin{document}
+\begin{center}
+{\LARGE\bfseries $title$\par}
+\vspace{6pt}
+{\large $subtitle$\par}
+\vspace{8pt}
+{\small Anonymous\quad |\quad Candidate v0.3.1\quad |\quad 27 September 2026\par}
+\end{center}
+\vspace{4pt}
+$body$
+\end{document}

@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0",
+  "title": "Sharp local stability and critical-exponent sensitivity of Ptolemaic split metrics",
+  "version": "0.3.1-candidate",
+  "doi": "10.5281/zenodo.23000081",
+  "status": "unrefereed-candidate",
+  "normalisation": "Mean cross-distance one; h is the maximum absolute distance perturbation; Delta uses Euclidean unit zero-sum vectors.",
+  "claims": [
+    {
+      "id": "sha256:057d0ebba1fed3558b4f59e6d64157d2e9f573605501fb859d0b1201933f5da9",
+      "alias": "LOCAL",
+      "statement": "At every specified split CS(a,r), in mean-cross-distance-one normalisation with h=||d-s||_infinity <= min(1/8,1/(12p(m-1))), A*h-b*h^2 <= Delta_p(d) <= U*h+p(m-1)*h^2. A and U are the exact attained lower and upper first-order rates.",
+      "locator": "Theorem 2.1; all pairs and constants in Section 2",
+      "evidence": "Direct geometry, exact certificates, written spectral argument",
+      "source": "paper/rigidity.pdf",
+      "formalVerification": "not-established",
+      "externalReview": "not-established"
+    },
+    {
+      "id": "sha256:ea0f3ab53c9e48ed986d354d1ee1aa213a7c4c97f88dcc080b0b0491a507d01f",
+      "alias": "CONE",
+      "statement": "The normalised Ptolemaic tangent cone is exactly D e >= 0, w^T e=0: every direction of infinity norm at most one is realised by s+t e+4t^2 e_in for 0<t<=1/20.",
+      "locator": "Lemma 3.1 and Theorem 4.1",
+      "evidence": "Written nonlinear realisation and universal/small dual certificates",
+      "source": "paper/rigidity.pdf",
+      "formalVerification": "not-established",
+      "externalReview": "not-established"
+    },
+    {
+      "id": "sha256:d25f89d94292e8fc04c0f46c70e7decaa31dcc03f8fcf5fa4c24d9584d2d9258",
+      "alias": "EXPONENT",
+      "statement": "For each fixed covered split, wp(d)-p=m*Delta_p(d)/(r(a+1)log(2))+O(h^2), with the attained lower and upper directional rates stated in Theorem 6.1.",
+      "locator": "Theorem 6.1",
+      "evidence": "Written implicit-function argument plus imported strict descent",
+      "source": "paper/rigidity.pdf",
+      "formalVerification": "not-established",
+      "externalReview": "not-established"
+    },
+    {
+      "id": "sha256:d648d8c18be8eee156484c0862d7fe974e0d11ec86018227724ec3ac71a0934c",
+      "alias": "FOUR",
+      "statement": "At the four-point equal-arm star, arm lengths 1+t,1-t,1 give Delta_p(d_t)=p(2p-3)t^2/8+O(t^4), p=log_2(3). Hence a positive linear lower bound fails there.",
+      "locator": "Proposition 7.2",
+      "evidence": "Written expansion plus symbolic check; not a general quadratic lower theorem",
+      "source": "paper/rigidity.pdf",
+      "formalVerification": "not-established",
+      "externalReview": "not-established"
+    },
+    {
+      "id": "sha256:97413810035aea4cc339ddca51bf403557d95c1386991ecfa625e2b2d2b9ef87",
+      "alias": "SMALL",
+      "statement": "The equality metrics at the three-point endpoint are distinct collinear triples; at the four-point endpoint they are similarities of CS(1,3) and CS(2,2).",
+      "locator": "Proposition 7.1",
+      "evidence": "Written equality specialisation of cited threshold, strict descent and Ercan transport",
+      "source": "paper/rigidity.pdf",
+      "formalVerification": "not-established",
+      "externalReview": "not-established"
+    },
+    {
+      "id": "sha256:1dde0d4e45f6c13a572bd81cfc683b1662640e3da79d2798bcbc31ccdb883488",
+      "alias": "COLLISION",
+      "statement": "For a diameter-one Ptolemaic pseudometric on m>=6 points with N<m zero-distance classes, the restricted kernel at p_m is the class-sum-zero space of dimension m-N, under the stated threshold premises.",
+      "locator": "Proposition 8.1",
+      "evidence": "Conditional quotient argument; companion threshold premises retained",
+      "source": "paper/rigidity.pdf",
+      "formalVerification": "not-established",
+      "externalReview": "not-established"
+    },
+    {
+      "id": "sha256:75a4f101e8ac8eb288b79e974b71d78278a591e3e84dbf00077ab2cba8c51b52",
+      "alias": "DESCENT",
+      "statement": "For N>=2, q-negative type, minimum distance eta>0 and 0<p<q, Delta_p(d)>=eta^p/[2 Gamma(1-p/q) log(2(N-1))^(p/q)].",
+      "locator": "Proposition 8.2",
+      "evidence": "Written Gaussian-kernel integral and diagonal-dominance bound",
+      "source": "paper/rigidity.pdf",
+      "formalVerification": "not-established",
+      "externalReview": "not-established"
+    }
+  ],
+  "limitations": [
+    "Unrefereed candidate; no formal proof-assistant verification, authenticated external specialist endorsement or journal peer review.",
+    "Producer-coordinated replay and separately implemented reviewer code do not establish unaffiliated reproduction.",
+    "Local split theorems do not require the companion universal threshold theorem; complete global equality interpretation does.",
+    "The five-point classification, general four-point quadratic stability, explicit global separated-class constant and sharp dimension-uniform second-order remainder remain open here.",
+    "Bounded prior-art checking does not establish exhaustive novelty or priority."
+  ]
+}

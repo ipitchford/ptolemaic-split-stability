@@ -1,0 +1,567 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "mutation": "valid",
+      "mode": "normal",
+      "entrypoint": "verify_exact.py",
+      "exitCode": 0,
+      "expected": "pass",
+      "log": "valid-normal-verify_exact.py.log"
+    },
+    {
+      "mutation": "valid",
+      "mode": "normal",
+      "entrypoint": "verify_symbolic.py",
+      "exitCode": 0,
+      "expected": "pass",
+      "log": "valid-normal-verify_symbolic.py.log"
+    },
+    {
+      "mutation": "valid",
+      "mode": "normal",
+      "entrypoint": "verify_numerical.py",
+      "exitCode": 0,
+      "expected": "pass",
+      "log": "valid-normal-verify_numerical.py.log"
+    },
+    {
+      "mutation": "valid",
+      "mode": "normal",
+      "entrypoint": "replay.py",
+      "exitCode": 0,
+      "expected": "pass",
+      "log": "valid-normal-replay.py.log"
+    },
+    {
+      "mutation": "valid",
+      "mode": "flag-O",
+      "entrypoint": "verify_exact.py",
+      "exitCode": 0,
+      "expected": "pass",
+      "log": "valid-flag-O-verify_exact.py.log"
+    },
+    {
+      "mutation": "valid",
+      "mode": "flag-O",
+      "entrypoint": "verify_symbolic.py",
+      "exitCode": 0,
+      "expected": "pass",
+      "log": "valid-flag-O-verify_symbolic.py.log"
+    },
+    {
+      "mutation": "valid",
+      "mode": "flag-O",
+      "entrypoint": "verify_numerical.py",
+      "exitCode": 0,
+      "expected": "pass",
+      "log": "valid-flag-O-verify_numerical.py.log"
+    },
+    {
+      "mutation": "valid",
+      "mode": "flag-O",
+      "entrypoint": "replay.py",
+      "exitCode": 0,
+      "expected": "pass",
+      "log": "valid-flag-O-replay.py.log"
+    },
+    {
+      "mutation": "valid",
+      "mode": "flag-OO",
+      "entrypoint": "verify_exact.py",
+      "exitCode": 0,
+      "expected": "pass",
+      "log": "valid-flag-OO-verify_exact.py.log"
+    },
+    {
+      "mutation": "valid",
+      "mode": "flag-OO",
+      "entrypoint": "verify_symbolic.py",
+      "exitCode": 0,
+      "expected": "pass",
+      "log": "valid-flag-OO-verify_symbolic.py.log"
+    },
+    {
+      "mutation": "valid",
+      "mode": "flag-OO",
+      "entrypoint": "verify_numerical.py",
+      "exitCode": 0,
+      "expected": "pass",
+      "log": "valid-flag-OO-verify_numerical.py.log"
+    },
+    {
+      "mutation": "valid",
+      "mode": "flag-OO",
+      "entrypoint": "replay.py",
+      "exitCode": 0,
+      "expected": "pass",
+      "log": "valid-flag-OO-replay.py.log"
+    },
+    {
+      "mutation": "valid",
+      "mode": "env-1",
+      "entrypoint": "verify_exact.py",
+      "exitCode": 0,
+      "expected": "pass",
+      "log": "valid-env-1-verify_exact.py.log"
+    },
+    {
+      "mutation": "valid",
+      "mode": "env-1",
+      "entrypoint": "verify_symbolic.py",
+      "exitCode": 0,
+      "expected": "pass",
+      "log": "valid-env-1-verify_symbolic.py.log"
+    },
+    {
+      "mutation": "valid",
+      "mode": "env-1",
+      "entrypoint": "verify_numerical.py",
+      "exitCode": 0,
+      "expected": "pass",
+      "log": "valid-env-1-verify_numerical.py.log"
+    },
+    {
+      "mutation": "valid",
+      "mode": "env-1",
+      "entrypoint": "replay.py",
+      "exitCode": 0,
+      "expected": "pass",
+      "log": "valid-env-1-replay.py.log"
+    },
+    {
+      "mutation": "valid",
+      "mode": "env-2",
+      "entrypoint": "verify_exact.py",
+      "exitCode": 0,
+      "expected": "pass",
+      "log": "valid-env-2-verify_exact.py.log"
+    },
+    {
+      "mutation": "valid",
+      "mode": "env-2",
+      "entrypoint": "verify_symbolic.py",
+      "exitCode": 0,
+      "expected": "pass",
+      "log": "valid-env-2-verify_symbolic.py.log"
+    },
+    {
+      "mutation": "valid",
+      "mode": "env-2",
+      "entrypoint": "verify_numerical.py",
+      "exitCode": 0,
+      "expected": "pass",
+      "log": "valid-env-2-verify_numerical.py.log"
+    },
+    {
+      "mutation": "valid",
+      "mode": "env-2",
+      "entrypoint": "replay.py",
+      "exitCode": 0,
+      "expected": "pass",
+      "log": "valid-env-2-replay.py.log"
+    },
+    {
+      "mutation": "negative-small",
+      "mode": "normal",
+      "entrypoint": "verify_exact.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "negative-small-normal-verify_exact.py.log"
+    },
+    {
+      "mutation": "negative-small",
+      "mode": "normal",
+      "entrypoint": "replay.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "negative-small-normal-replay.py.log"
+    },
+    {
+      "mutation": "negative-small",
+      "mode": "flag-O",
+      "entrypoint": "verify_exact.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "negative-small-flag-O-verify_exact.py.log"
+    },
+    {
+      "mutation": "negative-small",
+      "mode": "flag-O",
+      "entrypoint": "replay.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "negative-small-flag-O-replay.py.log"
+    },
+    {
+      "mutation": "negative-small",
+      "mode": "flag-OO",
+      "entrypoint": "verify_exact.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "negative-small-flag-OO-verify_exact.py.log"
+    },
+    {
+      "mutation": "negative-small",
+      "mode": "flag-OO",
+      "entrypoint": "replay.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "negative-small-flag-OO-replay.py.log"
+    },
+    {
+      "mutation": "negative-small",
+      "mode": "env-1",
+      "entrypoint": "verify_exact.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "negative-small-env-1-verify_exact.py.log"
+    },
+    {
+      "mutation": "negative-small",
+      "mode": "env-1",
+      "entrypoint": "replay.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "negative-small-env-1-replay.py.log"
+    },
+    {
+      "mutation": "negative-small",
+      "mode": "env-2",
+      "entrypoint": "verify_exact.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "negative-small-env-2-verify_exact.py.log"
+    },
+    {
+      "mutation": "negative-small",
+      "mode": "env-2",
+      "entrypoint": "replay.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "negative-small-env-2-replay.py.log"
+    },
+    {
+      "mutation": "identity-small",
+      "mode": "normal",
+      "entrypoint": "verify_exact.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "identity-small-normal-verify_exact.py.log"
+    },
+    {
+      "mutation": "identity-small",
+      "mode": "normal",
+      "entrypoint": "replay.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "identity-small-normal-replay.py.log"
+    },
+    {
+      "mutation": "identity-small",
+      "mode": "flag-O",
+      "entrypoint": "verify_exact.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "identity-small-flag-O-verify_exact.py.log"
+    },
+    {
+      "mutation": "identity-small",
+      "mode": "flag-O",
+      "entrypoint": "replay.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "identity-small-flag-O-replay.py.log"
+    },
+    {
+      "mutation": "identity-small",
+      "mode": "flag-OO",
+      "entrypoint": "verify_exact.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "identity-small-flag-OO-verify_exact.py.log"
+    },
+    {
+      "mutation": "identity-small",
+      "mode": "flag-OO",
+      "entrypoint": "replay.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "identity-small-flag-OO-replay.py.log"
+    },
+    {
+      "mutation": "identity-small",
+      "mode": "env-1",
+      "entrypoint": "verify_exact.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "identity-small-env-1-verify_exact.py.log"
+    },
+    {
+      "mutation": "identity-small",
+      "mode": "env-1",
+      "entrypoint": "replay.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "identity-small-env-1-replay.py.log"
+    },
+    {
+      "mutation": "identity-small",
+      "mode": "env-2",
+      "entrypoint": "verify_exact.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "identity-small-env-2-verify_exact.py.log"
+    },
+    {
+      "mutation": "identity-small",
+      "mode": "env-2",
+      "entrypoint": "replay.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "identity-small-env-2-replay.py.log"
+    },
+    {
+      "mutation": "negative-symbolic",
+      "mode": "normal",
+      "entrypoint": "verify_exact.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "negative-symbolic-normal-verify_exact.py.log"
+    },
+    {
+      "mutation": "negative-symbolic",
+      "mode": "normal",
+      "entrypoint": "verify_symbolic.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "negative-symbolic-normal-verify_symbolic.py.log"
+    },
+    {
+      "mutation": "negative-symbolic",
+      "mode": "normal",
+      "entrypoint": "replay.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "negative-symbolic-normal-replay.py.log"
+    },
+    {
+      "mutation": "negative-symbolic",
+      "mode": "flag-O",
+      "entrypoint": "verify_exact.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "negative-symbolic-flag-O-verify_exact.py.log"
+    },
+    {
+      "mutation": "negative-symbolic",
+      "mode": "flag-O",
+      "entrypoint": "verify_symbolic.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "negative-symbolic-flag-O-verify_symbolic.py.log"
+    },
+    {
+      "mutation": "negative-symbolic",
+      "mode": "flag-O",
+      "entrypoint": "replay.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "negative-symbolic-flag-O-replay.py.log"
+    },
+    {
+      "mutation": "negative-symbolic",
+      "mode": "flag-OO",
+      "entrypoint": "verify_exact.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "negative-symbolic-flag-OO-verify_exact.py.log"
+    },
+    {
+      "mutation": "negative-symbolic",
+      "mode": "flag-OO",
+      "entrypoint": "verify_symbolic.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "negative-symbolic-flag-OO-verify_symbolic.py.log"
+    },
+    {
+      "mutation": "negative-symbolic",
+      "mode": "flag-OO",
+      "entrypoint": "replay.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "negative-symbolic-flag-OO-replay.py.log"
+    },
+    {
+      "mutation": "negative-symbolic",
+      "mode": "env-1",
+      "entrypoint": "verify_exact.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "negative-symbolic-env-1-verify_exact.py.log"
+    },
+    {
+      "mutation": "negative-symbolic",
+      "mode": "env-1",
+      "entrypoint": "verify_symbolic.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "negative-symbolic-env-1-verify_symbolic.py.log"
+    },
+    {
+      "mutation": "negative-symbolic",
+      "mode": "env-1",
+      "entrypoint": "replay.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "negative-symbolic-env-1-replay.py.log"
+    },
+    {
+      "mutation": "negative-symbolic",
+      "mode": "env-2",
+      "entrypoint": "verify_exact.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "negative-symbolic-env-2-verify_exact.py.log"
+    },
+    {
+      "mutation": "negative-symbolic",
+      "mode": "env-2",
+      "entrypoint": "verify_symbolic.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "negative-symbolic-env-2-verify_symbolic.py.log"
+    },
+    {
+      "mutation": "negative-symbolic",
+      "mode": "env-2",
+      "entrypoint": "replay.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "negative-symbolic-env-2-replay.py.log"
+    },
+    {
+      "mutation": "identity-symbolic",
+      "mode": "normal",
+      "entrypoint": "verify_exact.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "identity-symbolic-normal-verify_exact.py.log"
+    },
+    {
+      "mutation": "identity-symbolic",
+      "mode": "normal",
+      "entrypoint": "verify_symbolic.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "identity-symbolic-normal-verify_symbolic.py.log"
+    },
+    {
+      "mutation": "identity-symbolic",
+      "mode": "normal",
+      "entrypoint": "replay.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "identity-symbolic-normal-replay.py.log"
+    },
+    {
+      "mutation": "identity-symbolic",
+      "mode": "flag-O",
+      "entrypoint": "verify_exact.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "identity-symbolic-flag-O-verify_exact.py.log"
+    },
+    {
+      "mutation": "identity-symbolic",
+      "mode": "flag-O",
+      "entrypoint": "verify_symbolic.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "identity-symbolic-flag-O-verify_symbolic.py.log"
+    },
+    {
+      "mutation": "identity-symbolic",
+      "mode": "flag-O",
+      "entrypoint": "replay.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "identity-symbolic-flag-O-replay.py.log"
+    },
+    {
+      "mutation": "identity-symbolic",
+      "mode": "flag-OO",
+      "entrypoint": "verify_exact.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "identity-symbolic-flag-OO-verify_exact.py.log"
+    },
+    {
+      "mutation": "identity-symbolic",
+      "mode": "flag-OO",
+      "entrypoint": "verify_symbolic.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "identity-symbolic-flag-OO-verify_symbolic.py.log"
+    },
+    {
+      "mutation": "identity-symbolic",
+      "mode": "flag-OO",
+      "entrypoint": "replay.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "identity-symbolic-flag-OO-replay.py.log"
+    },
+    {
+      "mutation": "identity-symbolic",
+      "mode": "env-1",
+      "entrypoint": "verify_exact.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "identity-symbolic-env-1-verify_exact.py.log"
+    },
+    {
+      "mutation": "identity-symbolic",
+      "mode": "env-1",
+      "entrypoint": "verify_symbolic.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "identity-symbolic-env-1-verify_symbolic.py.log"
+    },
+    {
+      "mutation": "identity-symbolic",
+      "mode": "env-1",
+      "entrypoint": "replay.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "identity-symbolic-env-1-replay.py.log"
+    },
+    {
+      "mutation": "identity-symbolic",
+      "mode": "env-2",
+      "entrypoint": "verify_exact.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "identity-symbolic-env-2-verify_exact.py.log"
+    },
+    {
+      "mutation": "identity-symbolic",
+      "mode": "env-2",
+      "entrypoint": "verify_symbolic.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "identity-symbolic-env-2-verify_symbolic.py.log"
+    },
+    {
+      "mutation": "identity-symbolic",
+      "mode": "env-2",
+      "entrypoint": "replay.py",
+      "exitCode": 1,
+      "expected": "reject",
+      "log": "identity-symbolic-env-2-replay.py.log"
+    }
+  ],
+  "corrupt_manifests_updated": true,
+  "scope": "Software acceptance controls, not formal proof of the analytic manuscript."
+}

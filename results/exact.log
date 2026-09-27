@@ -1,0 +1,1 @@
+PASS: {'small_certificates': 36, 'sampled_generic_certificates': 72, 'constraint_rows': 155436, 'primal_directions': 40, 'triangle_checks': 125064, 'ptolemy_checks': 182856}

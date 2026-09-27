@@ -1,0 +1,135 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=23mm,headheight=15pt,headsep=7mm,footskip=10mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsthm}
+\usepackage{newtxtext,newtxmath}
+\usepackage{booktabs,longtable,array,calc}
+\usepackage{microtype,xurl,graphicx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\setlength{\emergencystretch}{2em}
+\linespread{1.02}
+\setcounter{secnumdepth}{0}
+\setcounter{tocdepth}{2}
+\newcommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\providecommand{\pandocbounded}[1]{#1}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize Ptolemaic rigidity and stability}
+\fancyhead[R]{\footnotesize Research supplement v0.3}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\titleformat{\section}{\large\bfseries}{\thesection}{0pt}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\itshape}{\thesubsubsection}{0pt}{}
+\hypersetup{pdftitle={Response and further
+development},pdfauthor={},pdfsubject={Research proof supplement; unrefereed}}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries Response and further development\par}
+\vspace{6pt}
+{\large Supplied v0.2 and research supplement v0.3\par}
+\vspace{8pt}
+{\small Research version 0.3\quad |\quad 27 September 2026\par}
+\end{center}
+\vspace{4pt}
+\textbf{27 September 2026 --- research supplement v0.3}
+
+\subsection{1. What was accepted and
+preserved}\label{what-was-accepted-and-preserved}
+
+The input v0.2 was treated as the reviewed source, not overwritten. Its
+full six-job replay passed, including the nested companion exact replay.
+Forty input files and 130 nested companion files were manifest-verified.
+The saved equality-search summaries changed only in elapsed-time
+metadata; the trial records were identical. The new receipt and exact
+field diff are retained.
+
+The corrections in the supplied review are preserved: Ercan receives
+attribution for coefficient transport and sign-shift; the six-point
+extension retains its smaller-cardinality strictness premise; Li--Weston
+strict descent is cited where used; the restricted negative-type gap
+does not include the automatic centring zero. The v0.2 seven-point
+remainder and radius remain the preferred constants for that particular
+cardinality.
+
+\subsection{2. New mathematical content}\label{new-mathematical-content}
+
+\textbf{General-cardinality sharp tangent constants.} The seven-point
+active-constraint calculation extends to every binding split with
+m\textgreater=6 and to the five-point split locally. The constants have
+six small exceptions and three simple infinite-family formulas. Eighteen
+exact rational-function dual families prove all higher dimensions;
+thirty-six rational vectors handle the exceptions. Every active cone
+direction is integrated into a genuine Ptolemaic curve, so sharpness is
+geometric rather than only linear-programming sharpness.
+
+\textbf{Explicit local error and eigendirection bounds.} A Taylor and
+scalar Schur-complement calculation turns the exact cone law into a
+two-sided bound with an explicit quadratic remainder and radius for each
+cardinality. The general remainder is intentionally loose. It is not
+advertised as an improvement of v0.2's sharper seven-point constants.
+
+\textbf{The metric's own critical exponent.} A simple-eigenvalue
+implicit-function argument gives the first-order change in the supremal
+negative-type exponent. The two sharp coefficients follow exactly from
+the cone extremal directions. Strict descent excludes a later return to
+negative type. This is a fixed-cardinality result with O(h\^{}2)
+remainder, not an unproved uniform expansion over growing dimensions.
+
+\textbf{Small cardinalities and quadratic behaviour.} Three-point
+equality is collinearity. Four-point equality is exactly CS(1,3) or
+CS(2,2), using the external four-point endpoint, strict descent, Ercan's
+sharp scalar estimate and his transport. An unequal-arm perturbation at
+the four-point star has gap p(2p-3)t\textsuperscript{2/8+O(t}4), which
+rules out a positive linear lower stability constant there. The
+five-point equality family is not classified by this work, even though
+the local theorem applies to CS(2,3).
+
+\textbf{Collision strata.} The quotient of a colliding pseudometric
+identifies the entire kernel at the universal exponent: one zero-sum
+condition within each collision class. A separate Gaussian-kernel
+estimate gives an explicit subcritical lower gap for a separated smaller
+metric. This does not complete a numerical global C\_eta for the full
+separated seven-point class.
+
+\subsection{3. Checks that support the new
+proof}\label{checks-that-support-the-new-proof}
+
+\begin{itemize}
+\tightlist
+\item
+  Direct symbolic orbit counting verifies the eighteen identities and
+  positive coefficient expansions for all k in each half-line. No
+  fitting or solver call occurs in the proof verifier.
+\item
+  A separate Fraction reconstruction checks all small duals and original
+  labelled rows, the primal directions and exact feasible curves.
+\item
+  A separate symbolic calculation reconstructs the four-point
+  second-order eigenvalue coefficient from the six distances.
+\item
+  All 182 seeded perturbation records and eight 70-digit checks are
+  retained. Numerical evidence is explicitly corroborative.
+\end{itemize}
+
+The certificates are supplied as complete JSON objects and printable
+tables, not merely as a PASS statement. The numerical discovery history
+remains labelled and separate.
+
+\subsection{4. Remaining review
+obligations}\label{remaining-review-obligations}
+
+The local tangent and spectral proofs no longer depend on the companion
+all-size theorem, but their interpretation as a classification of the
+global equality set still does. Independent specialist review should
+focus on the orbit-counting dual identity, its universal positivity
+domains, cone realisability and the critical-exponent identification.
+Small-cardinality historical priority has not been settled. No
+formalisation, public release identifier, public licence or
+authenticated external endorsement has been assigned.
+\end{document}

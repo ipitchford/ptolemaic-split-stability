@@ -1,0 +1,10 @@
+Publication replay: macOS arm64; CPython 3.13; pinned requirements.txt.
+sympy==1.14.0
+numpy==2.3.5
+scipy==1.17.0
+mpmath==1.3.0
+Exact rational verification uses Python fractions; symbolic identities use SymPy.
+Numerical corroboration uses NumPy/SciPy/mpmath and is not required to be byte-identical.
+Use PYTHONDONTWRITEBYTECODE=1 and OPENBLAS_NUM_THREADS=1, OMP_NUM_THREADS=1.
+PDF build: Pandoc and pdfLaTeX; see build_paper.py and paper/template.tex.
+Historical ENVIRONMENT.json describes the received v0.3 generation, not this fresh replay.

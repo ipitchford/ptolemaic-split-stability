@@ -1,0 +1,75 @@
+{
+  "mutation": {
+    "record": 0,
+    "field": "values[0]",
+    "from": "9/10",
+    "to": "-1"
+  },
+  "manifest_updated": true,
+  "original_untouched": true,
+  "runs": [
+    {
+      "mode": "normal",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/mnt/data/ptolemaic_review_audit/disposable_mutated_bundle/replay.py\", line 60, in <module>\n    a=p.parse_args();main(a.mode,a.output)\n                     ~~~~^^^^^^^^^^^^^^^^^\n  File \"/mnt/data/ptolemaic_review_audit/disposable_mutated_bundle/replay.py\", line 46, in main\n    raise RuntimeError(f'{name} failed; read {out/name}.log')\nRuntimeError: exact failed; read /mnt/data/ptolemaic_review_audit/fault_normal/exact.log\n",
+      "report": {
+        "version": "0.3",
+        "mode": "exact",
+        "status": "FAIL",
+        "formal_proof_assistant": false,
+        "scope": "Exact algebra and certificates plus optional numerical corroboration; not formal verification of the analytic proof.",
+        "manifest_files_verified": 46,
+        "jobs": [
+          {
+            "job": "exact",
+            "exit_code": 1,
+            "elapsed_seconds": 2.428,
+            "reports": {}
+          }
+        ]
+      }
+    },
+    {
+      "mode": "optimised",
+      "exit_code": 0,
+      "stdout": "PASS: 2 jobs; 46 manifested files\n",
+      "stderr": "",
+      "report": {
+        "formal_proof_assistant": false,
+        "jobs": [
+          {
+            "elapsed_seconds": 11.344,
+            "exit_code": 0,
+            "job": "exact",
+            "reports": {
+              "exact_results.json": {
+                "exact_byte_match_required": true,
+                "matches_shipped_bytes": true,
+                "sha256": "50b9e1a29b03e810fcf9e9372339d665fadbfc6117455d1c8b040f0ecb03650e"
+              }
+            }
+          },
+          {
+            "elapsed_seconds": 6.192,
+            "exit_code": 0,
+            "job": "symbolic",
+            "reports": {
+              "symbolic_results.json": {
+                "exact_byte_match_required": true,
+                "matches_shipped_bytes": true,
+                "sha256": "8804e767f6f567a577a93e1e2a6be523d5c416599d7cc10616b4adc13480e519"
+              }
+            }
+          }
+        ],
+        "manifest_files_verified": 46,
+        "manifest_files_verified_after_replay": 46,
+        "mode": "exact",
+        "scope": "Exact algebra and certificates plus optional numerical corroboration; not formal verification of the analytic proof.",
+        "status": "PASS",
+        "version": "0.3"
+      }
+    }
+  ]
+}

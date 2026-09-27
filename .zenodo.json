@@ -1,0 +1,55 @@
+{
+  "title": "Sharp local stability and critical-exponent sensitivity of Ptolemaic split metrics",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "publication_date": "2026-09-27",
+  "creators": [
+    {
+      "name": "Anonymous"
+    }
+  ],
+  "description": "<p>Unrefereed mathematical candidate. Exact attained first-order stability constants at the specified complete split Ptolemaic metrics, universal rational-function certificates, explicit nonlinear realisation and local quadratic remainders, and sharp critical-exponent sensitivities.</p><p>This corrected v0.3.1 release replaces optimisation-sensitive assertions with explicit checks. The complete tables and machine-readable certificates are indispensable proof supplements. Local theorems are distinct from companion-dependent global equality interpretations. No formal proof-assistant verification, authenticated external specialist review, unaffiliated reproduction or exhaustive priority determination is claimed.</p><p>Original prose and data: CC0-1.0. Original code: MIT. Retained historical inputs and cited third-party material retain their own terms; see LICENSES.md.</p>",
+  "access_right": "open",
+  "license": "cc-zero",
+  "version": "v0.3.1-candidate",
+  "keywords": [
+    "Ptolemaic metrics",
+    "negative type",
+    "sharp local stability",
+    "critical exponent",
+    "exact certificates",
+    "unrefereed candidate"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/ipitchford/ptolemaic-split-stability",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.48550/arXiv.1108.0451",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1007/s11117-009-0035-2",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.48550/arXiv.2504.14840",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.48550/arXiv.2607.15375",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.48550/arXiv.2608.20606",
+      "relation": "references",
+      "scheme": "doi"
+    }
+  ]
+}
